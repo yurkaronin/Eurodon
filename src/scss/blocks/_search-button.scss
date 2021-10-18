@@ -1,0 +1,16 @@
+.search-button {
+  width: 38px;
+  height: 38px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eef4f7;
+  border: 1px solid #eef4f7;
+  border-radius: 4px;
+  svg {
+    width: 15px;
+    height: 15px;
+    display: block;
+  }
+}
