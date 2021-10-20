@@ -103,29 +103,6 @@ task('scripts:docs', () => {
     }
 );
 
-const svgoConfig = {
-	/* plugins: [
-		{
-			removeAttrs: { attrs: '(fill|stroke|style|width|height|data.*)' },
-		},
-	], */
-};
-
-const svgSpriteConfig = {
-	mode: {
-		symbol: {
-			sprite: '../sprite.svg',
-		},
-	},
-};
-
-task('svg', () => {
-    return src(['./src/img/icons/**/*.svg', '!src/img/icons/sprite.svg'])
-        .pipe(svgo(svgoConfig))
-        .pipe(svgSprite(svgSpriteConfig))
-        .pipe(dest('./src/img/icons/'));
-});
-
 task('copy:libs:build', () => {
 	return src('./src/libs/**/*')
 		.pipe(dest('./build/libs/'))
@@ -160,13 +137,13 @@ task('copy:fonts:docs', () => {
 });
 
 task('copy:img:build', () => {
-    return src(['./src/img/**/*', '!src/img/icons/**/*'])
+    return src('./src/img/**/*')
 		.pipe(dest('./build/img/'))
 		.pipe(browserSync.reload({ stream: true }));
 })
 
 task('copy:img:docs', () => {
-    return src(['./src/img/**/*', '!src/img/icons/**/*'])
+    return src('./src/img/**/*')
 		.pipe(
 			imagemin({
 				progressive: true,
@@ -181,9 +158,8 @@ task('watch', () => {
     watch('./src/scss/**/*.scss', series('styles:build'));
     watch('./src/js/**/*.js', series('scripts:build'));
     watch('./src/fonts/**/*', series('copy:fonts:build'));
-    watch(['./src/img/icons/**/*.svg', '!src/img/icons/sprite.svg'], series('svg'));
     watch('./src/libs/**/*', series('copy:libs:build'));
-    watch(['./src/img/**/*', '!src/img/icons/**/*'], series('copy:img:build'));
+    watch('./src/img/**/*', series('copy:img:build'));
 })
 
 task('server:build', () => {
@@ -206,7 +182,6 @@ task(
 	'default',
 	series(
 		'clean:build',
-		'svg',
     parallel('html:build', 'copy:fonts:build', 'styles:build', 'scripts:build', 'copy:img:build', 'copy:libs:build', 'copy:favicon:build'),
 		parallel('server:build', 'watch')
 	)
@@ -216,7 +191,6 @@ task(
 	'docs',
 	series(
 		'clean:docs',
-		'svg',
     parallel('html:docs', 'copy:fonts:docs', 'styles:docs', 'scripts:docs', 'copy:img:docs', 'copy:libs:docs', 'copy:favicon:docs'),
 		parallel('server:docs')
 	)
