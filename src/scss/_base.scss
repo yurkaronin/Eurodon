@@ -7,12 +7,13 @@ html {
 *,
 ::after,
 ::before {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
 
 :focus-visible {
   outline-color: #de2c27;
 }
+
 
 img {
   max-width: 100%;

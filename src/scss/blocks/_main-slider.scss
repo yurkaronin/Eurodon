@@ -1,0 +1,115 @@
+.main-slider {
+  // position: relative;
+}
+
+.main-slider__wrapper {
+}
+
+.main-slider__item {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 25px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-slider__photo {
+  max-width: 752px;
+
+  img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: auto;
+  }
+}
+.main-slider__details {
+  max-width: 608px;
+  margin: auto 0;
+  margin-top: 93px;
+}
+.main-slider__item-name {
+  font-family: "Montserrat", sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 100%;
+  color: inherit;
+  margin: 0;
+  margin-bottom: 38px;
+  padding-right: 130px;
+}
+.main-slider__text {
+  font-family: inherit;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 100%;
+  color: #788aa6;
+  margin: 0;
+  margin-bottom: 45px;
+}
+.main-slider__button {
+}
+
+.main-slider__navigation {
+  display: flex;
+  align-items: center;
+  max-width: 608px;
+  width: 100%;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-top: 1px #ebedef solid;
+  border-bottom: 1px #ebedef solid;
+}
+.main-slider__arrow-buttons {
+  display: flex;
+  max-width: max-content;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    position: initial;
+    flex-direction: row;
+    width: max-content;
+    margin: initial;
+    height: initial;
+    padding: 25px 50px;
+  }
+  .swiper-button-next {
+    border-left: 1px #ebedef solid;
+    padding-left: 51px;
+  }
+  .swiper-button-prev {
+    padding-right: 51px;
+  }
+
+  .swiper-button-next:after,
+  .swiper-button-prev:after {
+    display: none;
+  }
+
+  svg {
+    width: 11px;
+    height: 22px;
+  }
+}
+
+.main-slider__pagination {
+  width: initial;
+  position: initial;
+  max-width: 150px;
+
+  .swiper-pagination-bullet {
+    background-color: #d6d9dd;
+    width: 8px;
+    height: 8px;
+    margin: 0 8px !important;
+  }
+
+  .swiper-pagination-bullet-active {
+    background-color: #c3167c;
+  }
+}

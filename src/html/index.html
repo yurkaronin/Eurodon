@@ -8,7 +8,8 @@
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
 </head>
 
@@ -22,12 +23,72 @@
     <!-- услуги -->
     <section class="first-screen">
       <div class="wrapper">
+        <div class="main-slider swiper mySwiper">
+          <div class="main-slider__wrapper swiper-wrapper">
+            <!-- слайды -->
+            <article class="main-slider__item swiper-slide">
+              <div class="main-slider__photo">
+                <img src="img/main-slider/1.jpg" alt="фото слайдера" width="752" height="488">
+              </div>
+              <div class="main-slider__details">
+                <h3 class="main-slider__item-name">Выезд специалиста на дом</h3>
+                <p class="main-slider__text">Цените свое время</p>
+                <a class="main-slider__button button" href="">Заказать выезд на дом</a>
+              </div>
+            </article>
 
+            <article class="main-slider__item swiper-slide">
+              <div class="main-slider__photo">
+                <img src="img/main-slider/1.jpg" alt="фото слайдера" width="752" height="488">
+              </div>
+              <div class="main-slider__details">
+                <h3 class="main-slider__item-name">Выезд специалиста на дом</h3>
+                <p class="main-slider__text">Цените свое время</p>
+                <a class="main-slider__button button" href="">Заказать выезд на дом</a>
+              </div>
+            </article>
+
+            <article class="main-slider__item swiper-slide">
+              <div class="main-slider__photo">
+                <img src="img/main-slider/1.jpg" alt="фото слайдера" width="752" height="488">
+              </div>
+              <div class="main-slider__details">
+                <h3 class="main-slider__item-name">Выезд специалиста на дом</h3>
+                <p class="main-slider__text">Цените свое время</p>
+                <a class="main-slider__button button" href="">Заказать выезд на дом</a>
+              </div>
+            </article>
+
+          </div>
+          <!-- навигация слайдера -->
+          <div class="main-slider__navigation">
+
+            <div class="main-slider__pagination swiper-pagination"></div>
+
+            <div class="main-slider__arrow-buttons">
+              <div class="swiper-button-prev">
+                <svg>
+                  <use href="#slider-arrow-left"></use>
+                </svg>
+              </div>
+
+              <div class="swiper-button-next">
+                <svg>
+                  <use href="#slider-arrow-right"></use>
+                </svg>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
       </div>
     </section>
     <!-- услуги конец -->
   </main>
   @@include('sections/footer.html')
+  <!-- Swiper JS -->
+  <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
   <script src="./js/main.js"></script>
 </body>
 
