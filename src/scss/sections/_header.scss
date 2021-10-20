@@ -6,10 +6,8 @@
 .header__wrapper {
   display: grid;
   grid-template-columns: 224px auto;
-  // display: flex;
   flex-wrap: wrap;
   width: 100%;
-  // justify-content: space-between;
 }
 
 .header__logo {

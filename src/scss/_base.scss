@@ -1,9 +1,4 @@
-/* Базовые стили (общие) */
-html {
-  box-sizing: border-box;
-  margin: 0;
-}
-
+// глобальные стили
 *,
 ::after,
 ::before {
@@ -14,8 +9,16 @@ html {
   outline-color: #de2c27;
 }
 
-
 img {
   max-width: 100%;
   height: auto;
+}
+
+// служебные классы
+.icons-collection {
+  display: none;
+}
+
+.font-fix {
+  font-family: "Montserrat", sans-serif;
 }

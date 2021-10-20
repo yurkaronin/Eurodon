@@ -1,0 +1,13 @@
+.header-with-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.header-with-button__title {
+  margin: 0 !important;
+  margin-bottom: 24px;
+  max-width: 1300px;
+}
