@@ -3,91 +3,12 @@
 
     <div class="header-with-button">
       <h2 class="header-with-button__title title">Наши услуги</h2>
-      <a class="button button--plus" href="#"><img src="img/icons/plus.svg" alt="иконка" width="16" height="16">Все услуги</a>
+      <a class="button button--plus" href="#"><img src="img/icons/plus.svg" alt="иконка" width="16" height="16">Все
+        услуги</a>
     </div>
 
-    <div class="main-services__list">
-
-      <a class="long-card" href="#">
-        <h3 class="long-card__title title">Анализы</h3>
-        <svg class="long-card__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="m1 1 11 11L1 23" />
-        </svg>
-        <div class="long-card__image-wrapper">
-          <img class="long-card__photo" src="img/services/1.jpg" alt="фото услуг" width="752" height="80">
-        </div>
-      </a>
-
-      <a class="long-card" href="#">
-        <h3 class="long-card__title title">Аппаратная диагностика</h3>
-        <svg class="long-card__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="m1 1 11 11L1 23" />
-        </svg>
-        <div class="long-card__image-wrapper">
-          <img class="long-card__photo" src="img/services/1.jpg" alt="фото услуг" width="752" height="80">
-        </div>
-      </a>
-
-      <a class="long-card active" href="#">
-        <h3 class="long-card__title title">Диагностика Covid-19</h3>
-        <svg class="long-card__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="m1 1 11 11L1 23" />
-        </svg>
-        <div class="long-card__image-wrapper">
-          <img class="long-card__photo" src="img/services/1.jpg" alt="фото услуг" width="752" height="80">
-        </div>
-      </a>
-
-      <a class="long-card" href="#">
-        <h3 class="long-card__title title">Консультации врачей</h3>
-        <svg class="long-card__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="m1 1 11 11L1 23" />
-        </svg>
-        <div class="long-card__image-wrapper">
-          <img class="long-card__photo" src="img/services/1.jpg" alt="фото услуг" width="752" height="80">
-        </div>
-      </a>
-
-      <a class="long-card" href="#">
-        <h3 class="long-card__title title">Вызов врача на дом</h3>
-        <svg class="long-card__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="m1 1 11 11L1 23" />
-        </svg>
-        <div class="long-card__image-wrapper">
-          <img class="long-card__photo" src="img/services/1.jpg" alt="фото услуг" width="752" height="80">
-        </div>
-      </a>
-
-      <a class="long-card" href="#">
-        <h3 class="long-card__title title">Комплексные обследования</h3>
-        <svg class="long-card__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="m1 1 11 11L1 23" />
-        </svg>
-        <div class="long-card__image-wrapper">
-          <img class="long-card__photo" src="img/services/1.jpg" alt="фото услуг" width="752" height="80">
-        </div>
-      </a>
-
-      <a class="long-card" href="#">
-        <h3 class="long-card__title title">Телемедицина</h3>
-        <svg class="long-card__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="m1 1 11 11L1 23" />
-        </svg>
-        <div class="long-card__image-wrapper">
-          <img class="long-card__photo" src="img/services/1.jpg" alt="фото услуг" width="752" height="80">
-        </div>
-      </a>
-
-      <a class="long-card" href="#">
-        <h3 class="long-card__title title">УЗИ</h3>
-        <svg class="long-card__icon" width="14" height="24" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="m1 1 11 11L1 23" />
-        </svg>
-        <div class="long-card__image-wrapper">
-          <img class="long-card__photo" src="img/services/1.jpg" alt="фото услуг" width="752" height="80">
-        </div>
-      </a>
-
-    </div><!-- .main-services__list -->
+    <ul class="main-services__list">
+      @@include('../blocks/main-services__item.html')
+    </ul><!-- .main-services__list -->
   </div><!-- .wrapper -->
 </section>

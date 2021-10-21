@@ -1,5 +1,7 @@
+'use strict';
+
 // слайдер на главной странице
-var swiper = new Swiper(".first-screen-slider", {
+var swiper = new Swiper(".first-slider", {
   // loopFillGroupWithBlank: true,
   navigation: {
     nextEl: ".swiper-button-next",
@@ -7,6 +9,7 @@ var swiper = new Swiper(".first-screen-slider", {
   },
   pagination: {
     el: ".swiper-pagination",
+    clickable: true,
   },
   // mousewheel: true,
   // keyboard: true,
@@ -24,3 +27,15 @@ var swiper = new Swiper(".directions-slider", {
     prevEl: ".directions-slider__button-prev"
   }
 });
+
+// Кастомный select для новых страниц
+const defaultSelect = () => {
+  const element = document.querySelector('.custom-select');
+  const example = new Choices(element, {
+    itemSelectText: '',
+    searchEnabled: false,
+    placeholder: true,
+  });
+};
+
+defaultSelect();

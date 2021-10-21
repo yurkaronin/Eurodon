@@ -2,3 +2,26 @@
   opacity: 0.4;
   cursor: inherit;
 }
+
+.custom-slider-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.swiper-wrapper {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.first-slider__button-next,
+.first-slider__button-prev {
+  border: none;
+  background-color: transparent;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+  display: none;
+}
