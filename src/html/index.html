@@ -35,14 +35,76 @@
 
           <div class="header-with-button">
             <h2 class="header-with-button__title title">Врачи</h2>
-            <a class="button button--plus" href="#">
-              <img class="long-card__icon" src="img/icons/plus.svg" alt="иконка" width="14" height="24">
-              Смотреть всеx</a>
+            <a class="button button--plus" href="#">Смотреть всеx</a>
           </div>
 
+          <!-- слайдер статика  -->
           <div class="main-doctors__slider">
-            <!-- тут будет слайдер с врачами  -->
-          </div>
+            <div class="main-doctors__slider-content">
+              <!-- предыдущий слайд  -->
+              <article class="specialist-card specialist-card--prew">
+                <div class="specialist-card__photo">
+                  <img src="img/specialists/1.jpg" alt="фото специалиста" width="368" height="400">
+                </div>
+                <div class="specialist-card__info">
+                  <h3 class="specialist-card__name">Светлана Александровна Фролова</h3>
+                  <span class="specialist-card__specialty">Аллерголог-иммунолог</span>
+                  <p class="specialist-card__description">Кандидат медицинских наук, врач высшей квалификационной
+                    категории</p>
+                  <a href="#" class="specialist-card__button-sign-up button">Записаться на прием</a>
+                  <a href="#" class="specialist-card__button-working-hours button button--plus">Расписание</a>
+                </div>
+              </article>
+              <!-- центральный слайд  -->
+              <article class="specialist-card">
+                <div class="specialist-card__photo">
+                  <img src="img/specialists/1.jpg" alt="фото специалиста" width="368" height="400">
+                </div>
+                <div class="specialist-card__info">
+                  <h3 class="specialist-card__name">Светлана Александровна Фролова</h3>
+                  <span class="specialist-card__specialty">Аллерголог-иммунолог</span>
+                  <p class="specialist-card__description">Кандидат медицинских наук, врач высшей квалификационной
+                    категории</p>
+                  <a href="#" class="specialist-card__button-sign-up button">Записаться на прием</a>
+                  <a href="#" class="specialist-card__button-working-hours button button--plus">Расписание</a>
+                </div>
+              </article>
+              <!-- следующий слайд  -->
+              <article class="specialist-card specialist-card--next">
+                <div class="specialist-card__photo">
+                  <img src="img/specialists/1.jpg" alt="фото специалиста" width="368" height="400">
+                </div>
+                <div class="specialist-card__info">
+                  <h3 class="specialist-card__name">Светлана Александровна Фролова</h3>
+                  <span class="specialist-card__specialty">Аллерголог-иммунолог</span>
+                  <p class="specialist-card__description">Кандидат медицинских наук, врач высшей квалификационной
+                    категории</p>
+                  <a href="#" class="specialist-card__button-sign-up button">Записаться на прием</a>
+                  <a href="#" class="specialist-card__button-working-hours button button--plus">Расписание</a>
+                </div>
+              </article>
+            </div> <!-- .main-doctors__content -->
+            <!-- кнопки слайдера  -->
+            <div class="main-doctors__slider-buttons">
+              <button class="slider-button" type="button"></button>
+              <button class="slider-button slider-button--next" type="button"></button>
+            </div>
+            <!-- пагинация слайдера  -->
+            <div class="slider-paginations">
+              <ul class="slider-paginations__list">
+                <li><a class="slider-paginations__link" href=""></a></li>
+                <li><a class="slider-paginations__link" href=""></a></li>
+                <li><a class="slider-paginations__link" href=""></a></li>
+                <li><a class="slider-paginations__link" href=""></a></li>
+                <li><a class="slider-paginations__link" href=""></a></li>
+                <li><a class="slider-paginations__link" href=""></a></li>
+                <li><a class="slider-paginations__link slider-paginations__link--active" href=""></a></li>
+                <li><a class="slider-paginations__link" href=""></a></li>
+
+              </ul>
+            </div>
+
+          </div><!-- .main-doctors__slider -->
 
         </div>
       </section>
@@ -83,6 +145,9 @@
   <script src="./libs/choices.min.js"></script>
 
   <script src="./js/main.js"></script>
+  <script>
+
+  </script>
 </body>
 
 </html>

@@ -1,13 +1,13 @@
 .header {
   border-bottom: 1px solid #eef4f7;
   overflow: hidden;
-}
 
-.header__wrapper {
-  display: grid;
-  grid-template-columns: 224px auto;
-  flex-wrap: wrap;
-  width: 100%;
+  .wrapper {
+    display: grid;
+    grid-template-columns: 224px auto;
+    flex-wrap: wrap;
+    width: 100%;
+  }
 }
 
 .header__logo {
@@ -17,14 +17,6 @@
   border-right: 1px solid #ebedef;
   text-decoration: none;
   display: block;
-
-  img {
-    max-width: 177px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
-    margin-left: 0;
-  }
 }
 
 .header__top {
@@ -50,14 +42,14 @@
     top: 0;
     left: 99%;
   }
-}
 
-.header__submenu-left {
-  max-width: 741px;
-}
+  .submenu-list-left {
+    max-width: 741px;
+  }
 
-.header__submenu-right {
-  max-width: 415px;
+  .submenu-list-right {
+    max-width: 415px;
+  }
 }
 
 .header__bottom {
@@ -67,10 +59,10 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-}
 
-.header__main-nav {
-  max-width: 800px;
+  .main-nav {
+    max-width: 800px;
+  }
 }
 
 .header__contacts {
@@ -79,13 +71,12 @@
   gap: 7.5px;
   justify-content: space-between;
   max-width: 450px;
-}
 
-.header__tel {
-  width: 209px;
-}
+  .tel-link {
+    width: 209px;
+  }
 
-.header__button {
-  max-width: 165px;
-  width: 100%;
+  .button--transparent {
+    max-width: 165px;
+  }
 }

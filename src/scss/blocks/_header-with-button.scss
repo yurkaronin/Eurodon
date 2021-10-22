@@ -11,3 +11,10 @@
   margin-bottom: 24px;
   max-width: 1300px;
 }
+
+.header-with-button__form {
+  display: flex;
+  justify-content: space-between;
+  gap: 32px;
+  align-items: baseline;
+}

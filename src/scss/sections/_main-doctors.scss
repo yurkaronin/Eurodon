@@ -1,0 +1,36 @@
+.main-doctors {
+  margin-bottom: 49px;
+}
+.wrapper {
+}
+.header-with-button {
+}
+.header-with-button__title {
+}
+.title {
+}
+.button {
+}
+.button--plus {
+}
+.main-doctors__slider {
+  position: relative;
+}
+.main-doctors__slider-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1250px;
+  margin: 0 auto;
+}
+
+.main-doctors__slider-buttons {
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  position: absolute;
+  top: 40%;
+}

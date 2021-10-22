@@ -25,11 +25,15 @@ var swiper = new Swiper(".directions-slider", {
   navigation: {
     nextEl: ".directions-slider__button-next",
     prevEl: ".directions-slider__button-prev"
+  },
+  pagination: {
+    el: ".swiper-pagination",
+    clickable: true,
   }
 });
 
 // Кастомный select для новых страниц
-const defaultSelect = () => {
+/* const defaultSelect = () => {
   const element = document.querySelector('.custom-select');
   const example = new Choices(element, {
     itemSelectText: '',
@@ -38,4 +42,4 @@ const defaultSelect = () => {
   });
 };
 
-defaultSelect();
+defaultSelect(); */

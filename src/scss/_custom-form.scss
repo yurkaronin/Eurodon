@@ -13,18 +13,26 @@
 }
 
 .choices[data-type*="select-one"]::after {
+  content: url(../img/icons/arr-down-min.svg);
   width: 11px;
   height: 11px;
   border: 0;
-  background-color: transparent;
-  border-right: 2px solid #34358c;
-  border-bottom: 2px solid #34358c;
-  border-radius: 1px;
-  right: 24px;
-  top: 42px;
-  margin-top: -14.5px;
-  -webkit-transform: rotate(45deg);
-  transform: rotate(45deg);
-  -webkit-transition: all 0.1s ease;
+  right: 0;
+  top: 0;
+  // transform: rotate(45deg);
   transition: all 0.1s ease;
+}
+
+/* .choices__list .choices__list--dropdown.is-active .choices[data-type*="select-one"]::after {
+  -webkit-transform: rotate(225deg);
+  transform: rotate(225deg);
+} */
+
+.text-field__label {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 100%;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #334257;
 }

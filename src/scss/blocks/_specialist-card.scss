@@ -1,0 +1,77 @@
+.specialist-card {
+  background-color: #ffffff;
+  color: #334257;
+  max-width: 736px;
+  border-radius: 8px;
+  overflow: hidden;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.specialist-card__photo {
+  height: auto;
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+}
+
+.specialist-card__info {
+  padding: 47px 48px;
+}
+
+.specialist-card__name {
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 133%;
+  color: #334257;
+  margin: 0;
+  margin-bottom: 16px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.specialist-card__specialty {
+  font-size: 16px;
+  line-height: 24px;
+  color: #788aa6;
+  display: block;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+.specialist-card__description {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  color: #334257;
+  display: block;
+  margin: 0;
+  margin-bottom: 29px;
+}
+
+.specialist-card__button-sign-up {
+  margin: 0;
+  font-size: 12px;
+  line-height: 16px;
+  margin-bottom: 11px;
+  font-weight: 600;
+  font-family: "Open Sans", sans-serif;
+  padding: 10px 16px;
+}
+
+.specialist-card__button-working-hours {
+  margin: 0;
+}
+
+.specialist-card--prew,
+.specialist-card--next {
+  grid-template-columns: 1fr;
+  max-width: 224px;
+
+  .specialist-card__info {
+    display: none;
+  }
+}

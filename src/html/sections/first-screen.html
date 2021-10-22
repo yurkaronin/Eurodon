@@ -1,15 +1,22 @@
 <section class="first-screen">
   <div class="wrapper">
     <!-- слайдер  -->
-    <div class="first-screen__slider first-slider swiper">
-      <div class="first-slider__wrapper swiper-wrapper">
-        <!-- слайды -->
-        @@include('../blocks/first-slider-item.html')
-        @@include('../blocks/first-slider-item.html')
-        @@include('../blocks/first-slider-item.html')
-        @@include('../blocks/first-slider-item.html')
-        @@include('../blocks/first-slider-item.html')
-        @@include('../blocks/first-slider-item.html')
+    <div class="first-slider swiper">
+      <div class="first-slider__wrapper swiper-wrapper" id="first-slider">
+        <!-- шаблон слайда. Если тебе нужно оживить - просто удали обёртку template и весь блок javascript-кода -->
+        <template id="first-slider-item">
+          <div class="first-slider__item swiper-slide">
+            <div class="first-slider__photo">
+              <img src="img/first-slider/1.jpg" alt="фото слайдера" width="752" height="488">
+            </div>
+            <div class="first-slider__details">
+              <h3 class="first-slider__item-name" id="item-name">Выезд специалиста на дом</h3>
+              <p class="first-slider__text" id="item-text">Цените свое время</p>
+              <a href="#" class="first-slider__button button" id="item-link-text">Заказать выезд на дом</a>
+            </div>
+          </div>
+        </template>
+
       </div>
       <!-- навигация слайдера -->
       <div class="first-slider__navigation">
@@ -28,3 +35,29 @@
     </div><!-- .first-slider -->
   </div><!-- .wrapper -->
 </section>
+
+<!-- Весь код в теге <script> можно целиком удалить  -->
+<script>
+  // родитель и шаблон
+  const firstSlider = document.querySelector('#first-slider');
+  const firstSliderItem = document.querySelector('#first-slider-item');
+  // контент
+  let itemName = firstSliderItem.content.querySelector('#item-name');
+  let itemText = firstSliderItem.content.querySelector('#item-text');
+  let itemLinkText = firstSliderItem.content.querySelector('#item-link-text');
+
+
+  // 1
+  itemName.textContent = 'Выезд специалиста на дом';
+  itemText.textContent = 'Цените свое время';
+  itemLinkText.textContent = 'Заказать выезд на дом';
+  let clone = firstSliderItem.content.cloneNode(true);
+  firstSlider.append(clone);
+  // 2
+  clone = firstSliderItem.content.cloneNode(true);
+  firstSlider.append(clone);
+  // 3
+  clone = firstSliderItem.content.cloneNode(true);
+  firstSlider.append(clone);
+
+</script>
