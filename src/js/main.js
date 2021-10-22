@@ -4,11 +4,11 @@
 var swiper = new Swiper(".first-slider", {
   // loopFillGroupWithBlank: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".first-slider .swiper-button-next",
+    prevEl: ".first-slider .swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".first-slider .swiper-pagination",
     clickable: true,
   },
   // mousewheel: true,
@@ -23,11 +23,11 @@ var swiper = new Swiper(".directions-slider", {
   loopFillGroupWithBlank: true,
 
   navigation: {
-    nextEl: ".directions-slider__button-next",
-    prevEl: ".directions-slider__button-prev"
+    nextEl: ".directions-slider .swiper-button-next",
+    prevEl: ".directions-slider .swiper-button-prev"
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".directions-slider .swiper-pagination",
     clickable: true,
   }
 });

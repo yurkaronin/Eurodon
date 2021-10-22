@@ -1,9 +1,16 @@
-.first-slider__item {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 25px;
-  align-items: center;
-  justify-content: space-between;
+.first-slider {
+
+  .swiper-slide {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .button {
+    padding: 20px 10px;
+  }
 }
 
 .first-slider__photo {
@@ -23,7 +30,7 @@
   margin-top: 93px;
 }
 
-.first-slider__item-name {
+.first-slider__name {
   font-family: "Montserrat", sans-serif;
   font-style: normal;
   font-weight: 700;
@@ -46,10 +53,6 @@
   margin-bottom: 45px;
 }
 
-.first-slider__button {
-  padding: 20px 10px;
-}
-
 .first-slider__navigation {
   display: flex;
   align-items: center;
@@ -68,8 +71,7 @@
   display: flex;
   max-width: max-content;
 
-  .first-slider__button-next,
-  .first-slider__button-prev {
+  .slider-button {
     position: initial;
     flex-direction: row;
     width: max-content;
@@ -88,10 +90,6 @@
     padding-right: 51px;
   }
 
-  svg {
-    width: 11px;
-    height: 22px;
-  }
 }
 
 .first-slider__pagination {

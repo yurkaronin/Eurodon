@@ -15,13 +15,15 @@
   margin: 0;
 }
 
-.first-slider__button-next,
-.first-slider__button-prev {
+.swiper-button-next,
+.swiper-button-prev {
   border: none;
   background-color: transparent;
 }
 
 .swiper-button-next::after,
 .swiper-button-prev::after {
-  display: none;
+  font-family: none;
+  font-size: 0;
+  line-height: 0;
 }
