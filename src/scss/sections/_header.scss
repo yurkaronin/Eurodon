@@ -1,12 +1,21 @@
 .header {
-  border-bottom: 1px solid #eef4f7;
-  position     : relative;
-  z-index      : 10;
+  background-color: #ffffff;
+  border-bottom   : 1px solid #eef4f7;
+  position        : relative;
+  z-index         : 10;
+  overflow-x      : clip;
+  position        : sticky;
+  top             : 0;
 
   .wrapper {
     display              : grid;
     grid-template-columns: 224px auto;
   }
+
+  .main-nav {
+    margin-right: auto;
+  }
+
 
 }
 
@@ -54,12 +63,13 @@
 }
 
 .header__bottom {
-  padding        : 0 32px;
+  padding        : 0 30px;
   padding-right  : 0;
   display        : flex;
   flex-wrap      : wrap;
   align-items    : center;
   justify-content: space-between;
+  gap            : 7.5px;
 
   .main-nav {
     max-width: 800px;
@@ -69,9 +79,11 @@
 .header__contacts {
   display        : flex;
   align-items    : center;
-  gap            : 7.5px;
+  gap            : 16px;
   justify-content: space-between;
-  max-width      : 450px;
+  flex-wrap      : wrap;
+  max-width      : 392px;
+  width          : 100%;
 
   .tel-link {
     width: 209px;
@@ -80,6 +92,35 @@
   .button--transparent {
     max-width: 162px;
     width    : 100%;
+  }
+
+}
+
+
+
+.header__buttons {
+  max-width  : 177px;
+  display    : flex;
+  align-items: center;
+}
+
+.sticky {
+  position: fixed;
+  width   : 100%;
+  border  : none;
+
+  .wrapper {
+    align-items: center;
+  }
+
+  .header__top {
+    display: none;
+  }
+
+  .header__logo {
+    padding  : 0;
+    max-width: 127px;
+    border   : none;
   }
 
 }

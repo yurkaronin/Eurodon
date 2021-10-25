@@ -1,0 +1,50 @@
+.menu-button {
+  background-color: transparent;
+  position        : relative;
+  border          : none;
+  padding         : 28px 44px;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+  display         : none;
+
+  span,
+  span::before,
+  span::after {
+    position           : absolute;
+    width              : 30px;
+    height             : 2px;
+    background-color   : #0098D0;
+  }
+
+  span::before,
+  span::after {
+    content   : '';
+    display   : block;
+    transition: 0.2s;
+  }
+
+  span::before {
+    transform: translateY(-8px);
+  }
+
+  span::after {
+    transform: translateY(8px);
+  }
+
+
+}
+
+.menu-button--active {
+  span {
+    height: 0;
+  }
+
+  span:before {
+    transform: rotate(-45deg);
+  }
+
+  span:after {
+    transform: rotate(45deg);
+  }
+}

@@ -1,15 +1,11 @@
-.main-nav {
-  ul {
-
-  }
-}
+.main-nav {}
 
 .main-nav__list {
   list-style     : none;
   padding        : 0;
   margin         : 0;
   display        : flex;
-  gap            : 20px;
+  gap            : 16px;
   flex-wrap      : wrap;
   align-items    : center;
   justify-content: space-between;
@@ -34,9 +30,10 @@
     color        : #0098D0;
   }
 
-  a.active {
+  a.active,
+  a:not([href]) {
     border-bottom: 2px solid #C3167C;
-    color: #C3167C;
+    color        : #C3167C;
   }
 }
 
@@ -45,20 +42,28 @@
 }
 
 .main-nav__sublist {
-  list-style     : none;
-  padding        : 0;
-  margin         : 0;
-  position     : absolute;
-  top          : 100%;
-  left         : 0;
-  background   : #FFFFFF;
-  box-shadow   : 4px 4px 24px rgba(0, 0, 0, 0.2);
-  border-radius: 0 4px 4px 4px;
-  padding      : 25px 24px 27px 32px;
-  display: flex;
-  gap: 35px;
-  flex-direction: column;
-  width: 408px;
+  list-style    : none;
+  padding       : 0;
+  margin        : 0;
+  position      : absolute;
+  top           : 100%;
+  left          : 0;
+  background    : #FFFFFF;
+  box-shadow    : 4px 4px 24px rgba(0, 0, 0, 0.2);
+  border-radius : 0 4px 4px 4px;
+  padding       : 25px 24px 27px 32px;
+  display       : flex;
+  gap           : 35px;
+  width: 80vh;
+  flex-wrap: wrap;
+  flex-direction: row;
+  display       : none;
+
+  li {
+    width: 320px;
+  }
+
+
 
   a {
     font-style : normal;
@@ -66,6 +71,14 @@
     font-size  : 14px;
     line-height: 20px;
     color      : #334257;
-    padding: 0;
+    padding    : 0;
+    border     : none !important;
   }
+}
+
+.main-nav__parent:hover>.main-nav__sublist {
+  display   : flex;
+  // max-height: 80vh;
+  // width     : 90vh;
+  // flex-wrap : wrap;
 }

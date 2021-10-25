@@ -1,0 +1,124 @@
+@media (max-width: 1500px) {
+  .main-nav {
+    position        : absolute;
+    width           : 100%;
+    top             : 100%;
+    max-width       : 100%;
+    left            : 0;
+    background-color: #ffffff;
+    padding         : 40px 32px;
+    color           : #334257;
+  }
+
+  .main-nav__list a:hover,
+  .main-nav__list a:active,
+  .main-nav__list a:focus,
+  .main-nav__list a.show,
+  .main-nav__list a.active,
+  a:not([href]) {
+    border: none !important;
+  }
+
+  .main-nav__list a.show {
+    color: inherit;
+  }
+
+  .main-nav__list a {
+    font-family   : "Montserrat", sans-serif;
+    font-style    : normal;
+    font-weight   : 700;
+    font-size     : 20px;
+    line-height   : 32px;
+    display       : flex;
+    align-items   : center;
+    text-transform: uppercase;
+    color         : #334257;
+
+    &:hover {
+      color: #0098D0;
+    }
+  }
+
+  .main-nav__sublist {
+    display      : flex;
+    position     : initial;
+    background   : transparent;
+    width        : initial;
+    padding      : 0;
+    box-shadow   : none;
+    border-radius: initial;
+    gap          : 15px;
+
+    a {
+      font-size     : 14px;
+      font-weight   : 400;
+      font-family   : "Open Sans", sans-serif;
+      font-weight   : 400px;
+      text-transform: initial;
+    }
+  }
+
+  .header__bottom .main-nav {
+    max-width : 100%;
+    border-top: 1px solid #eef4f7;
+  }
+
+  .main-nav__sublist {
+    flex-direction: column;
+  }
+
+  .main-nav__list {
+    align-items   : initial;
+    flex-direction: column;
+    max-height    : 80vh;
+    overflow      : auto;
+  }
+
+  .menu-button {
+    display: flex;
+  }
+
+  .header__logo {
+    padding-right: 0;
+    max-width    : 209px;
+  }
+
+  .header__top {
+    padding-left: 0;
+  }
+
+  .button--search {
+    background-color: transparent;
+    border-left     : 1px solid #ebedef;
+    border-right    : 1px solid #ebedef;
+  }
+
+  .menu-button {
+    margin-left: auto;
+  }
+
+  .tel-link {
+    font-size: 18px;
+  }
+
+  .header__contacts {
+    gap            : 0px;
+    justify-content: space-between;
+    max-width      : 343px;
+    width          : 100%;
+  }
+
+  .header__contacts .tel-link {
+    text-align: left;
+    width     : initial;
+  }
+
+  .header__bottom {
+    padding: 0;
+  }
+
+  .header__buttons .button--search {
+    padding: 28px 44px;
+  }
+
+}
