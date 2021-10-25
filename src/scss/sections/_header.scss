@@ -1,46 +1,47 @@
 .header {
   border-bottom: 1px solid #eef4f7;
-  overflow: hidden;
+  position     : relative;
+  z-index      : 10;
 
   .wrapper {
-    display: grid;
+    display              : grid;
     grid-template-columns: 224px auto;
-    flex-wrap: wrap;
-    width: 100%;
   }
+
 }
 
 .header__logo {
-  padding: 20px 46px 0 0;
-  margin: 0;
-  max-width: 224px;
-  border-right: 1px solid #ebedef;
+  padding        : 20px 46px 0 0;
+  margin         : 0;
+  max-width      : 224px;
+  border-right   : 1px solid #ebedef;
   text-decoration: none;
-  display: block;
+  display        : block;
+  grid-row       : span 2 / auto;
 }
 
 .header__top {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 24px;
-  align-items: baseline;
+  display        : flex;
+  flex-wrap      : wrap;
+  gap            : 24px;
+  align-items    : baseline;
   justify-content: space-between;
-  border-bottom: 1px solid #ebedef;
-  padding: 11px 0 12px 32px;
-  height: max-content;
-  position: relative;
-  z-index: 2;
+  border-bottom  : 1px solid #ebedef;
+  padding        : 11px 0 12px 32px;
+  height         : max-content;
+  position       : relative;
+  z-index        : 2;
 
   &::after {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 100%;
-    height: 102%;
+    content      : "";
+    display      : block;
+    position     : absolute;
+    width        : 100%;
+    height       : 102%;
     border-bottom: 1px solid #ebedef;
-    z-index: 0;
-    top: 0;
-    left: 99%;
+    z-index      : 0;
+    top          : 0;
+    left         : 99%;
   }
 
   .submenu-list-left {
@@ -53,11 +54,11 @@
 }
 
 .header__bottom {
-  padding: 7px 32px 11px;
-  padding-right: 0;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
+  padding        : 0 32px;
+  padding-right  : 0;
+  display        : flex;
+  flex-wrap      : wrap;
+  align-items    : center;
   justify-content: space-between;
 
   .main-nav {
@@ -66,17 +67,19 @@
 }
 
 .header__contacts {
-  display: flex;
-  align-items: center;
-  gap: 7.5px;
+  display        : flex;
+  align-items    : center;
+  gap            : 7.5px;
   justify-content: space-between;
-  max-width: 450px;
+  max-width      : 450px;
 
   .tel-link {
     width: 209px;
   }
 
   .button--transparent {
-    max-width: 165px;
+    max-width: 162px;
+    width    : 100%;
   }
+
 }
