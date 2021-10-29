@@ -1,0 +1,77 @@
+@media (max-width: 840px) {
+
+  .header__top,
+  .main-nav {
+    padding-left : 20px;
+    padding-right: 20px;
+  }
+
+  .header__logo {
+    padding-left: 20px;
+  }
+
+  .header__bottom {
+    justify-content: flex-end;
+    padding        : 0;
+    padding-right  : 20px;
+  }
+
+  .menu-button {
+    padding: 30px;
+  }
+
+  .header__buttons .button--search {
+    padding      : 30px;
+    padding-right: 10px;
+    border-right : none;
+  }
+
+  .header__contacts {
+    display: none;
+  }
+
+  .main-nav__list {
+    grid-template-columns: 1fr;
+    gap                  : 0;
+  }
+
+  .main-nav__list li {
+    border-bottom: 1px solid #ebedef;
+    margin-bottom: 0;
+  }
+
+  .main-nav__list a {
+    margin-bottom : 0;
+    padding-top   : 14px;
+    padding-bottom: 14px;
+  }
+
+  .main-nav__sublist {
+    gap           : 16px;
+    opacity       : 0;
+    height        : 0;
+    overflow      : hidden;
+    padding-top   : 0;
+    padding-bottom: 30px;
+  }
+
+  .main-nav__sublist a {
+    padding-top   : 0;
+    padding-bottom: 0;
+  }
+
+  .main-nav__sublist li {
+    border-top    : none;
+    border-bottom : none;
+    padding-top   : 0;
+    padding-bottom: 0;
+  }
+
+  .main-nav.active .main-nav__sublist {
+    padding-bottom: 30px;
+    height        : initial;
+    opacity       : 1;
+
+  }
+
+}

@@ -64,7 +64,9 @@
   z-index: 0;
 }
 
-.long-card:hover {
+.long-card:hover,
+.long-card:active,
+.long-card:focus {
   border-color: transparent;
 
   .long-card__image-wrapper {

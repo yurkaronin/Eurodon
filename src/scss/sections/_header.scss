@@ -96,8 +96,6 @@
 
 }
 
-
-
 .header__buttons {
   max-width  : 177px;
   display    : flex;
@@ -110,11 +108,16 @@
   border  : none;
 
   .wrapper {
-    align-items: center;
+    align-items          : center;
+    grid-template-columns: 160px auto;
   }
 
   .header__top {
     display: none;
+  }
+
+  .header__bottom {
+    padding: 0;
   }
 
   .header__logo {

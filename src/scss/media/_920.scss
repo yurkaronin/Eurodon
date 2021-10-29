@@ -1,0 +1,40 @@
+@media (max-width: 920px) {
+  .wrapper {
+    padding: 0;
+  }
+
+  .header__top::after {
+    display: none;
+  }
+
+  .header__logo {
+    grid-row    : initial;
+    border-right: none;
+  }
+
+  .header__top {
+    grid-column     : span 2 / auto;
+    order           : -1;
+    background-color: #EEF4F6;
+    padding-left    : 40px;
+    padding-right   : 40px;
+  }
+
+  .header__logo {
+    padding     : 0;
+    display     : flex;
+    padding-left: 40px;
+    max-width   : 100%;
+    width       : 100%;
+  }
+
+  .header__logo img {
+    max-width: 127px;
+  }
+
+  .header__bottom {
+    padding-right: 40px;
+    padding-left : 35px;
+  }
+
+}
