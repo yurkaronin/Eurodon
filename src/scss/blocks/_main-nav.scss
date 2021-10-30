@@ -1,3 +1,7 @@
+.main-nav {
+    max-width: 800px;
+}
+
 .main-nav__list {
   list-style     : none;
   padding        : 0;
@@ -9,29 +13,43 @@
   justify-content: space-between;
 
   a {
-    display        : block;
-    font-family    : "Open Sans", sans-serif;
-    text-decoration: none;
-    font-weight    : 600;
-    font-size      : 16px;
-    line-height    : 24px;
-    color          : #334257;
-    padding        : 14px 0 16px;
-    border-bottom  : 2px solid transparent;
-  }
 
-  a:hover,
-  a:active,
-  a:focus,
-  a.show {
+    &:hover,
+    &:active,
+    &:focus,
+    &.show {
+      color: #0098D0;
+    }
+
+    &.active,
+    &:not([href]) {
+      color: #C3167C;
+    }
+  }
+}
+
+.main-nav__link {
+  display        : block;
+  font-family    : "Open Sans", sans-serif;
+  text-decoration: none;
+  font-weight    : 600;
+  font-size      : 16px;
+  line-height    : 24px;
+  color          : #334257;
+  padding        : 14px 0 16px;
+  border-bottom  : 2px solid transparent;
+
+
+  &:hover,
+  &:active,
+  &:focus,
+  &.show {
     border-bottom: 2px solid #0098D0;
-    color        : #0098D0;
   }
 
-  a.active,
-  a:not([href]) {
+  &.active,
+  &:not([href]) {
     border-bottom: 2px solid #C3167C;
-    color        : #C3167C;
   }
 }
 
@@ -52,8 +70,8 @@
   padding       : 25px 24px 27px 32px;
   display       : flex;
   gap           : 16px;
-  width: 408px;
-  flex-wrap: wrap;
+  width         : 408px;
+  flex-wrap     : wrap;
   flex-direction: column;
   display       : none;
 
@@ -61,19 +79,18 @@
     width: 320px;
   }
 
-
-
   a {
-    font-style : normal;
-    font-weight: normal;
-    font-size  : 14px;
-    line-height: 20px;
-    color      : #334257;
-    padding    : 0;
-    border     : none !important;
+    display        : block;
+    font-family    : "Open Sans", sans-serif;
+    text-decoration: none;
+    font-style     : normal;
+    font-weight    : normal;
+    font-size      : 14px;
+    line-height    : 20px;
+    color          : #334257;
   }
 }
 
-.main-nav__parent:hover>.main-nav__sublist {
-  display   : flex;
+.main-nav__parent:hover > .main-nav__sublist {
+  display: flex;
 }

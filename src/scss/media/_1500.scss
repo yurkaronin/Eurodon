@@ -11,8 +11,11 @@
     margin-top      : -1px;
     max-width       : 100%;
     border-top      : 1px solid #eef4f7;
+    display: none;
 
-    display         : none;
+    &.show {
+      display: block;
+    }
   }
 
   .main-nav__list a:hover,
@@ -21,7 +24,7 @@
   .main-nav__list a.show,
   .main-nav__list a.active,
   a:not([href]) {
-    border: none !important;
+    border-color: transparent;
   }
 
   .main-nav__list {
@@ -95,11 +98,17 @@
     flex-direction: column;
   }
 
-
-
   .menu-button {
-    display      : flex;
-    border-bottom: 1px solid #ffffff;
+    background-color: transparent;
+    position        : relative;
+    border          : none;
+    padding         : 28px 44px;
+    display         : flex;
+    align-items     : center;
+    justify-content : center;
+    border-left     : 1px solid #ebedef;
+    border-bottom   : 1px solid #ffffff;
+    margin-left: auto;
   }
 
   .header__logo {
@@ -115,10 +124,6 @@
     background-color: transparent;
     border-left     : 1px solid #ebedef;
     border-right    : 1px solid #ebedef;
-  }
-
-  .menu-button {
-    margin-left: auto;
   }
 
   .tel-link {
