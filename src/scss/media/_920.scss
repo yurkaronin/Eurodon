@@ -1,6 +1,11 @@
 @media (max-width: 920px) {
-  .wrapper {
+  .header .wrapper {
     padding: 0;
+  }
+
+  .sticky .wrapper {
+    padding-left: 33px;
+    padding-right: 33px;
   }
 
   .header__top::after {

@@ -1,21 +1,29 @@
 @media (max-width: 1280px) {
   .wrapper {
-    padding-left : 33px;
+    padding-left: 33px;
     padding-right: 33px;
   }
 
   .first-slider__name {
-    font-size    : 32px;
+    font-size: 32px;
     margin-bottom: 17px;
-    padding      : 0;
-    max-width    : 365px;
+    padding: 0;
+    max-width: 365px;
   }
 
   .first-slider__text {
-    font-size    : 20px;
+    font-size: 20px;
     margin-bottom: 30px;
   }
 
+  .footer-menu,
+  .copyright__list {
+    gap: 40px 70px;
+  }
+
+  .footer-menu__wrapper,
+  .copyright__item {
+    width: 45%;
+  }
+
 }
-
-

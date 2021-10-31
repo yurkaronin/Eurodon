@@ -1,0 +1,43 @@
+.promo-block {
+  padding: 35px 0 37px;
+  background-color: #EEF4F7;
+  color: #334257;
+  .wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+  }
+}
+
+.promo-block__title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 120%;
+  display: flex;
+  align-items: center;
+  color: #334257;
+  margin: 0;
+  max-width: 470px;
+}
+
+.tel-link {}
+
+.promo-block__buttons {
+  min-width: 330px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 32px;
+
+  .button {
+    max-width: 165px;
+    padding: 10px 16px 11px;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+}
