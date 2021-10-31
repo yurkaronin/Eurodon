@@ -1,5 +1,5 @@
 .main-information {
-  padding: 65px 0;
+  padding: 65px 0 0;
 
   p {
     margin: 0;
@@ -15,9 +15,9 @@
 }
 
 .main-information__content {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 160px;
   align-items: center;
   justify-content: space-between;
 }

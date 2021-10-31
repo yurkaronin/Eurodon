@@ -1,0 +1,9 @@
+@media (max-width: 1024px) {
+  .main-information__content {
+    grid-template-columns: 1fr;
+    margin: 0 auto;
+    max-width: 768px;
+    gap: 33px;
+  }
+
+}

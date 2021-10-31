@@ -13,24 +13,24 @@
   }
 
   .header__logo {
-    grid-row    : initial;
+    grid-row: initial;
     border-right: none;
   }
 
   .header__top {
-    grid-column     : span 2 / auto;
-    order           : -1;
+    grid-column: span 2 / auto;
+    order: -1;
     background-color: #EEF4F6;
-    padding-left    : 40px;
-    padding-right   : 40px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .header__logo {
-    padding     : 0;
-    display     : flex;
+    padding: 0;
+    display: flex;
     padding-left: 40px;
-    max-width   : 100%;
-    width       : 100%;
+    max-width: 100%;
+    width: 100%;
   }
 
   .header__logo img {
@@ -39,7 +39,19 @@
 
   .header__bottom {
     padding-right: 40px;
-    padding-left : 35px;
+    padding-left: 35px;
   }
+
+  .main-ratings__list {
+    flex-wrap: wrap;
+  }
+
+  .main-ratings__item {
+    flex-basis: 328px;
+  }
+
+  /* .ratings-card__wrapper {
+    margin-bottom: 70px;
+  } */
 
 }

@@ -1,0 +1,20 @@
+@media (max-width: 1380px) {
+  .main-ratings__list {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .ratings-card__wrapper {
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .ratings-card__wrapper {
+    margin-bottom: 40px;
+  }
+
+  .ratings-card__score {
+    font-size: 32px;
+    line-height: 120%;
+  }
+}
