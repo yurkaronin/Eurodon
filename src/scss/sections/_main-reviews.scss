@@ -1,0 +1,41 @@
+.main-reviews__item {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.main-reviews__copyright {
+  width: 40px;
+  height: 40px;
+  display: block;
+}
+
+.main-reviews__author {
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 100%;
+  text-align: right;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  color: #334257;
+}
+
+.main-reviews__top {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.main-reviews__text {
+  margin-bottom: 15px;
+}
+
+.main-reviews-swiper .swiper-wrapper {
+  max-width: 992px;
+  margin: 0 auto;
+}
+
+.main-reviews-swiper .swiper-button-next,
+.main-reviews-swiper .swiper-button-prev {
+  position: absolute;
+}
