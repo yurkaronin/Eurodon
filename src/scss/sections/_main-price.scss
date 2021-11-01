@@ -1,9 +1,15 @@
 .main-price {
+  padding: 40px 0;
 
   .title {
     margin: 0;
     margin-bottom: 40px;
   }
+}
+
+.main-price--min {
+  max-width: 992px;
+  margin: 0 auto;
 }
 
 .main-price__list {

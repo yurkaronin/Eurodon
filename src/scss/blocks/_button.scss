@@ -115,3 +115,17 @@
   max-width: 100%;
   width: 100%;
 }
+
+.button--center {
+  margin: 0 auto;
+  max-width: 480px;
+  width: 100%;
+  padding: 15px;
+  display: 700;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  margin-top: 43px;
+}
