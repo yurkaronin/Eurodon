@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>О клинике</title>
+  <title>Нейтрализующие антитела к коронавирусу SARS‑CoV‑2, спайковый (S) белок</title>
 
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
@@ -12,12 +12,12 @@
   <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./libs/choices.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
+
 </head>
 
 <body class="body">
   @@include('sections/header.html')
   <main>
-
     <section class="breadcrumbs">
       <div class="wrapper">
         <ul class="breadcrumbs__list">
@@ -25,27 +25,19 @@
             <a class="breadcrumbs__link" href="#">Главная</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link" href="#">Клиника</a>
+            <a class="breadcrumbs__link" href="#">Услуги</a>
           </li>
           <li class="breadcrumbs__item">
-            <a class="breadcrumbs__link">О клинике</a>
+            <a class="breadcrumbs__link">Нейтрализующие антитела к коронавирусу SARS‑CoV‑2, спайковый (S) белок</a>
           </li>
         </ul>
-        <h1 class="page-title title">О клинике</h1>
+        <h1 class="page-title title">Нейтрализующие антитела к коронавирусу SARS‑CoV‑2, спайковый (S) белок</h1>
       </div>
     </section>
 
-    <div class="wrapper narrow">
-      <section class="page-content">
-
-        <img src="img/content/2.jpg" alt="фото статьи" width="992" height="560">
-        <p class="lead">Клиника «ЕВРОДОН» была создана весной 2002 года с появлением на рынке медицинских услуг
-          высокоточного молекулярно-генетического лабораторного исследования – полимеразная цепная реакция (ПЦР). В
-          России тема ПЦР развивалась в ФБУН Центральный НИИ эпидемиологии Роспотребнадзора г. Москвы во главе с
-          академиком РАМН, доктором медицинских наук, профессором, лауреатом Государственной премии и премий
-          Правительства Российской Федерации в области науки и техники, именных премий АМН СССР и РАМН Валентином
-          Ивановичем Покровским.</p>
-
+    <section class="page-content">
+      <div class="wrapper">
+        <img src="img/content/3.jpg" alt="фото статьи" width="992" height="560">
         <p>Организованное между НИИ и клиникой "ЕВРОДОН" деловое сотрудничество, с использованием в клинической
           лабораторной диагностики научных и практических достижений института, позволило обеспечить повседневную
           доступность к современным диагностическим технологиям мирового уровня.</p>
@@ -61,21 +53,25 @@
           опубликован на страницах американского (США) научного журнала «Клиническая вирусология».</p>
         <p>Таким образом, используя современные средства коммуникации, результатами нашей работы может воспользоваться
           любой человек в любой точке мира.</p>
-      </section>
-    </div>
+        <a class="button button--big" href="#">Записаться на прием</a>
 
+        <div class="content-navigation">
+          <a class="button button--arrow" href="#">Назад к списку</a>
+        </div>
+      </div>
+    </section>
+    <div class="decorate">@@include('sections/main-price.html')</div>
     <div class="decorate">
       @@include('sections/main-doctors.html')
       @@include('sections/main-reviews.html')
     </div>
+    <div class="decorate">@@include('sections/main-faq.html')</div>
     @@include('sections/promo-block.html')
   </main>
   @@include('sections/footer.html')
   <script src="./libs/swiper-bundle.min.js"></script>
   <script src="./libs/choices.min.js"></script>
   <script src="./js/main.js"></script>
-  <script>
-  </script>
 </body>
 
 </html>

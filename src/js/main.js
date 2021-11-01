@@ -9,54 +9,52 @@ var swiper1 = new Swiper(".first-slider", {
     prevEl: ".swiper-button-prev",
   },
   pagination: {
-    el: ".swiper-pagination",
+    el: ".first-slider__pagination",
     clickable: true,
   },
 });
 }
 
 // слайдер по направлениям услуг
-const directionsSwiper = document.querySelector('.directions-slider');
+const directionsSwiper = document.querySelector('.directions-slider__swiper');
 if (directionsSwiper) {
-  var swiper2  = new Swiper(".directions-slider", {
+  var swiper2  = new Swiper(".directions-slider__swiper", {
   slidesPerView: 5,
   spaceBetween: 32,
   slidesPerGroup: 1,
   loopFillGroupWithBlank: true,
 
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev"
-  },
-  pagination: {
-    el: ".swiper-pagination",
-    clickable: true,
+    nextEl: ".directions-slider-next",
+    prevEl: ".directions-slider-prew"
   }
 });
 }
 
 // Слайдер с отзывами
-const reviewsSwiper = document.querySelector('.main-reviews-swiper');
-if (reviewsSwiper) {
-  var swiper3 = new Swiper(".main-reviews-swiper", {
-    cssMode: true,
-    slidesPerView: 1,
-    spaceBetween: 20,
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    mousewheel: true,
-    keyboard: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    freeMode: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
-  });
-}
+// const reviewsSwiper = document.querySelector('.main-reviews-swiper');
+// if (reviewsSwiper) {
+
+// }
+
+var swiper3 = new Swiper(".main-reviews-swiper", {
+  // cssMode: true,
+  slidesPerView: 1,
+  spaceBetween: 20,
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev",
+  },
+  // mousewheel: true,
+  // keyboard: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    el: ".swiper-pagination",
+    // clickable: true,
+  },
+});
 
 
 // Кастомный select для новых страниц

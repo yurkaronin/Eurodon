@@ -1,6 +1,17 @@
 .directions-slider {
   max-width: 1248px;
   margin: 0 auto;
+  position: relative;
+  display: flex;
+  align-items: center;
+
+  .slider-button--next {
+    right: -100px;
+  }
+
+  .directions-slider-prew {
+    left: -100px;
+  }
 }
 
 .directions-slider__item {
@@ -19,35 +30,4 @@
 
 .directions-slider__name {
   margin: 0;
-}
-
-.directions-slider__button-next,
-.directions-slider__button-prev {
-  width: 96px;
-  height: 96px;
-  padding: 37px 42px;
-  background: #ffffff;
-  border-radius: 4px;
-  border: 1px solid #e5eaee;
-  position: absolute;
-  cursor: pointer;
-
-  svg {
-    width: 14px;
-    height: 24px;
-  }
-}
-
-.directions-slider__button-next {
-  right: 0;
-}
-
-.directions-slider__button-prev {
-  left: 0;
-}
-
-.directions-slider .swiper-button-disabled {
-  img {
-    opacity: 0.7;
-  }
 }
