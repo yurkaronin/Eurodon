@@ -1,70 +1,94 @@
 .button {
-  display        : flex;
+  display: flex;
   justify-content: center;
-  align-items    : center;
-  padding        : 16px 10px 17px;
-  max-width      : 237px;
-  background     : #0098d0;
-  color          : #ffffff;
-  border-radius  : 4px;
-  font-family    : inherit;
-  font-weight    : 700;
-  font-size      : 16px;
-  line-height    : 100%;
+  align-items: center;
+  padding: 16px 10px 17px;
+  max-width: 237px;
+  background: #0098d0;
+  color: #ffffff;
+  border-radius: 4px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 100%;
   text-decoration: none;
-  border         : 1px solid transparent;
+  border: 1px solid transparent;
 }
 
 .button--transparent {
-  background  : transparent;
-  color       : #0098d0;
-  font-family : inherit;
-  font-weight : 600;
+  background: transparent;
+  color: #0098d0;
+  font-family: inherit;
+  font-weight: 600;
   border-color: rgba(0, 152, 208, 0.5);
-  font-size   : 12px;
-  padding     : 12px 10px;
+  font-size: 12px;
+  padding: 12px 10px;
 
   &:active,
   &:hover,
   &:focus {
     background-color: #0098D0;
-    color           : #ffffff;
+    color: #ffffff;
   }
 
 
 }
 
 .button--plus {
-  background      : transparent;
-  color           : #0098d0;
-  font-weight     : 600;
-  font-size       : 12px;
-  line-height     : 16px;
+  background: transparent;
+  color: #0098d0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
   background-color: #ffffff;
-  border          : 1px solid rgba(0, 152, 208, 0.5);
-  border-radius   : 4px;
-  padding         : 10px 16px 11px 42px;
-  max-width       : max-content;
-  width           : initial;
-  justify-content : space-between;
-  position        : relative;
+  border: 1px solid rgba(0, 152, 208, 0.5);
+  border-radius: 4px;
+  padding: 10px 16px 11px 42px;
+  max-width: max-content;
+  width: initial;
+  justify-content: space-between;
+  position: relative;
 
   &::after {
-    content : url(../img/icons/plus.svg);
+    content: url(../img/icons/plus.svg);
     position: absolute;
-    left    : 15px;
-    width   : 16px;
-    height  : 16px;
+    left: 15px;
+    width: 16px;
+    height: 16px;
+  }
+}
+
+.button--arrow {
+  background: transparent;
+  color: #0098d0;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  background-color: #ffffff;
+  border: 1px solid rgba(0, 152, 208, 0.5);
+  border-radius: 4px;
+  padding: 10px 16px 11px 42px;
+  max-width: max-content;
+  width: initial;
+  justify-content: space-between;
+  position: relative;
+
+  &::after {
+    content: url(../img/icons/icon-arrow-back.svg);
+    position: absolute;
+    left: 15px;
+    width: 16px;
+    height: 16px;
   }
 }
 
 .button--search {
-  position        : relative;
-  display         : flex;
-  align-items     : center;
-  justify-content : center;
-  width           : 38px;
-  height          : 38px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
   background-color: #eef4f7;
 
   &:active,
@@ -74,10 +98,10 @@
   }
 
   &::after {
-    content : url(../img/icons/search.svg);
+    content: url(../img/icons/search.svg);
     position: absolute;
-    width   : 15px;
-    height  : 15px;
+    width: 15px;
+    height: 15px;
   }
 
   &:active::after,
@@ -85,4 +109,9 @@
   &:focus::after {
     content: url(../img/icons/search-wh.svg);
   }
+}
+
+.button--big {
+  max-width: 100%;
+  width: 100%;
 }
