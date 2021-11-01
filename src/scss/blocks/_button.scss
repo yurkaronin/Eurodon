@@ -12,7 +12,18 @@
   font-size: 16px;
   line-height: 100%;
   text-decoration: none;
+<<<<<<< Updated upstream
   border: 1px solid transparent;
+=======
+  border         : 1px solid transparent;
+
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: #303F82;
+    color           : #ffffff;
+  }
+>>>>>>> Stashed changes
 }
 
 .button--transparent {
@@ -49,9 +60,17 @@
   justify-content: space-between;
   position: relative;
 
+  &:active,
+  &:hover,
+  &:focus {
+    background-color: #0098D0;
+    color           : #ffffff;
+  }
+
   &::after {
     content: url(../img/icons/plus.svg);
     position: absolute;
+<<<<<<< Updated upstream
     left: 15px;
     width: 16px;
     height: 16px;
@@ -79,6 +98,19 @@
     left: 15px;
     width: 16px;
     height: 16px;
+=======
+    left    : 15px;
+    width   : 16px;
+    height  : 16px;
+
+
+  }
+
+  &:active::after,
+  &:hover::after,
+  &:focus::after {
+    content: url(../img/icons/plus-wh.svg);
+>>>>>>> Stashed changes
   }
 }
 
