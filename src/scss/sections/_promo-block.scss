@@ -22,22 +22,3 @@
   margin: 0;
   max-width: 470px;
 }
-
-.tel-link {}
-
-.promo-block__buttons {
-  min-width: 330px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 32px;
-
-  .button {
-    max-width: 165px;
-    padding: 10px 16px 11px;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 16px;
-  }
-
-}
