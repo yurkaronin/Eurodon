@@ -5,63 +5,34 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Главная страница - ЕВРОДОН</title>
-
   <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
   <link rel="icon" href="/favicon.ico" type="image/x-icon">
-
-  <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
   <link rel="stylesheet" href="./libs/choices.min.css" />
   <link rel="stylesheet" href="./css/main.css" />
-
 </head>
-
 <body class="body">
-
   @@include('sections/header.html')
-
   <main>
-    <!-- услуги -->
     @@include('sections/first-screen.html')
-
     <div class="decorate">
-      <!-- поиск по сайту  -->
       @@include('sections/main-search.html')
-      <!-- секция популярных услуг  -->
       @@include('sections/main-services.html')
-      <!-- слайдер с направлениями -->
       @@include('sections/main-directions.html')
     </div>
-
     <div class="decorate">
-      <!-- врачи  -->
       @@include('sections/main-doctors.html')
-      <!-- филиалы по городу  -->
       @@include('sections/map-location.html')
     </div>
-
     <div class="decorate">
-      <!-- Рейтинги на независимых сервисах -->
       @@include('sections/main-ratings.html')
-      <!-- Медицинские центры «ЕвроДон» -->
       @@include('sections/main-information.html')
     </div>
-
-    <!-- Если у вас остались вопросы, звоните -->
     @@include('sections/promo-block.html')
-
-
-
   </main>
   @@include('sections/footer.html')
-  <!-- Swiper JS -->
   <script src="./libs/swiper-bundle.min.js"></script>
   <script src="./libs/choices.min.js"></script>
-
   <script src="./js/main.js"></script>
-  <script>
-
-  </script>
 </body>
-
 </html>

@@ -1,29 +1,18 @@
 const { task, src, dest, series, watch, parallel } = require('gulp');
-
 const rm = require('gulp-rm');
 const browserSync = require('browser-sync').create();
-
 const fileinclude = require('gulp-file-include');
 const plumber = require('gulp-plumber');
 const notify = require('gulp-notify');
-
-const sass = require('gulp-sass');
+const sass = require('gulp-sass')(require('sass'));
 const sassGlob = require('gulp-sass-glob');
 const sourcemaps = require('gulp-sourcemaps');
 const gcmq = require('gulp-group-css-media-queries');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
 const concat = require('gulp-concat');
-
 const babel = require('gulp-babel');
 const uglify = require('gulp-uglify');
-
-const svgo = require('gulp-svgo');
-const svgSprite = require('gulp-svg-sprite');
-
-const imagemin = require('gulp-imagemin');
-
-sass.compiler = require('node-sass');
 
 task('clean:build', () => {
 	return src('./build/**/*', { read: false }).pipe(rm());
@@ -144,12 +133,6 @@ task('copy:img:build', () => {
 
 task('copy:img:docs', () => {
     return src('./src/img/**/*')
-		.pipe(
-			imagemin({
-				progressive: true,
-				interlaced: true,
-			})
-		)
 		.pipe(dest('./docs/img/'));
 })
 
