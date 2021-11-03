@@ -16,7 +16,6 @@
     margin-right: auto;
   }
 
-
 }
 
 .header__logo {
@@ -76,20 +75,19 @@
   display: flex;
   align-items: center;
   gap: 16px;
-  justify-content: space-between;
+  justify-content: flex-end;
   flex-wrap: wrap;
-  max-width: 392px;
+  max-width: 380px;
   width: 100%;
 
-  .tel-link {
-    width: 209px;
+  @media (max-width: 1515px) {
+    justify-content: flex-start;
   }
 
   .button--transparent {
     max-width: 162px;
     width: 100%;
   }
-
 }
 
 .header__buttons {
@@ -98,6 +96,7 @@
   align-items: center;
 }
 
+// прилипающее меню
 .sticky {
   position: fixed;
   width: 100%;
@@ -124,5 +123,5 @@
     max-width: 127px;
     border: none;
   }
-
 }
+// прилипающее меню конец

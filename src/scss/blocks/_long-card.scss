@@ -43,6 +43,7 @@
   opacity: 0;
   border-radius: 8px;
   overflow: hidden;
+  transition: all 0.55s;
 
   &::before {
     content: "";

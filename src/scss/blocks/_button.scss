@@ -13,14 +13,14 @@
   line-height: 100%;
   text-decoration: none;
   border: 1px solid transparent;
+  transition: 0.2s linear;
+}
 
-  &:active,
-  &:hover,
-  &:focus {
-    background-color: #303F82;
-    color: #ffffff;
-  }
-
+.button:active,
+.button:hover,
+.button:focus {
+  background-color: #303f82;
+  color: #ffffff;
 }
 
 .button--transparent {
@@ -31,15 +31,14 @@
   border-color: rgba(0, 152, 208, 0.5);
   font-size: 12px;
   padding: 12px 10px;
+  transition: 0.2s linear;
 
   &:active,
   &:hover,
   &:focus {
-    background-color: #0098D0;
+    background-color: #0098d0;
     color: #ffffff;
   }
-
-
 }
 
 .button--plus {
@@ -56,20 +55,25 @@
   width: initial;
   justify-content: space-between;
   position: relative;
+  transition: 0.2s linear;
+}
 
-  &:active,
-  &:hover,
-  &:focus {
-    background-color: #0098D0;
-    color: #ffffff;
-  }
+.button__icon-plus {
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  left: 15px;
+  fill: #0098d0;
+}
 
-  &::after {
-    content: url(../img/icons/plus.svg);
-    position: absolute;
-    left: 15px;
-    width: 16px;
-    height: 16px;
+.button--plus:active,
+.button--plus:hover,
+.button--plus:focus {
+  background-color: #0098d0;
+  color: #ffffff;
+
+  .button__icon-plus {
+    fill: #ffffff;
   }
 }
 
@@ -87,6 +91,7 @@
   width: initial;
   justify-content: space-between;
   position: relative;
+  transition: 0.2s linear;
 
   &::after {
     content: url(../img/icons/icon-arrow-back.svg);
@@ -97,8 +102,6 @@
     left: 15px;
     width: 16px;
     height: 16px;
-
-
   }
 
   &:active::after,
@@ -116,24 +119,42 @@
   width: 38px;
   height: 38px;
   background-color: #eef4f7;
+  transition: 0.2s linear;
 
-  &:active,
-  &:hover,
-  &:focus {
-    background-color: #303F82;
+  @media (max-width: 1515px) {
+    background-color: transparent;
+    border-left: 1px solid #ebedef;
+    border-right: 1px solid #ebedef;
+    padding: 28px 44px;
+  }
+}
+
+.button__icon-search {
+  stroke: #334257;
+  width: 16px;
+  height: 16px;
+  position: absolute;
+
+  @media (max-width: 1515px) {
+    stroke: #334257;
+  }
+}
+
+.button--search:active,
+.button--search:hover,
+.button--search:focus {
+  background-color: #303f82;
+
+  @media (max-width: 1515px) {
+    background-color: transparent;
   }
 
-  &::after {
-    content: url(../img/icons/search.svg);
-    position: absolute;
-    width: 15px;
-    height: 15px;
-  }
+  .button__icon-search {
+    stroke: #ffffff;
 
-  &:active::after,
-  &:hover::after,
-  &:focus::after {
-    content: url(../img/icons/search-wh.svg);
+    @media (max-width: 1515px) {
+      stroke: #334257;
+    }
   }
 }
 
@@ -154,4 +175,5 @@
   display: flex;
   justify-content: center;
   margin-top: 43px;
+  transition: 0.2s linear;
 }

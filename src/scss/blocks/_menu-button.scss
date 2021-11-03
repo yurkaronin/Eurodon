@@ -1,19 +1,32 @@
 .menu-button {
-  display         : none;
+  display: none;
+
+  @media (max-width: 1515px) {
+      background-color: transparent;
+      position: relative;
+      border: none;
+      padding: 28px 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-left: 1px solid #ebedef;
+      border-bottom: 1px solid #ffffff;
+      margin-left: auto;
+  }
 
   span,
   span::before,
   span::after {
-    position        : absolute;
-    width           : 30px;
-    height          : 2px;
-    background-color: #0098D0;
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: #0098d0;
   }
 
   span::before,
   span::after {
-    content   : '';
-    display   : block;
+    content: "";
+    display: block;
     transition: 0.2s;
   }
 
@@ -24,8 +37,6 @@
   span::after {
     transform: translateY(8px);
   }
-
-
 }
 
 .menu-button.active {

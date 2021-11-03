@@ -1,6 +1,4 @@
 @media (max-width: 1500px) {
-
-
   .main-nav__list a:hover,
   .main-nav__list a:active,
   .main-nav__list a:focus,
@@ -25,24 +23,6 @@
 
   .main-nav__list a.show {
     color: inherit;
-  }
-
-  .main-nav__list a {
-    font-family: "Montserrat", sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 32px;
-    display: flex;
-    align-items: center;
-    text-transform: uppercase;
-    color: #334257;
-    padding: 0;
-    margin-bottom: 25px;
-
-    &:hover {
-      color: #0098D0;
-    }
   }
 
   .main-nav__parent--empty {
@@ -81,19 +61,6 @@
     flex-direction: column;
   }
 
-  .menu-button {
-    background-color: transparent;
-    position: relative;
-    border: none;
-    padding: 28px 44px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-left: 1px solid #ebedef;
-    border-bottom: 1px solid #ffffff;
-    margin-left: auto;
-  }
-
   .header__logo {
     padding-right: 0;
     max-width: 209px;
@@ -101,12 +68,6 @@
 
   .header__top {
     padding-left: 0;
-  }
-
-  .button--search {
-    background-color: transparent;
-    border-left: 1px solid #ebedef;
-    border-right: 1px solid #ebedef;
   }
 
   .tel-link {
@@ -129,9 +90,7 @@
     padding: 0;
   }
 
-  .header__buttons .button--search {
-    padding: 28px 44px;
-  }
+
 
 
 
