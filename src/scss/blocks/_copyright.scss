@@ -13,11 +13,19 @@
   border-bottom: 1px solid #ebedef;
   padding: 32px 0;
 
+  @media (max-width: 1280px) {
+    gap: 40px 70px;
+  }
 }
 
 .copyright__item {
   width: 20%;
   flex-grow: 1;
+
+  @media (max-width: 1280px) {
+    width: 45%;
+  }
+
 }
 
 .copyright__link {

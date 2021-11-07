@@ -9,11 +9,19 @@
   flex-wrap: wrap;
   align-items: flex-start;
   gap: 32px;
+
+  @media (max-width: 1280px) {
+    gap: 40px 70px;
+  }
 }
 
 .footer-menu__wrapper {
   width: 20%;
   flex-grow: 1;
+
+  @media (max-width: 1280px) {
+    width: 45%;
+  }
 }
 
 .footer-menu__name {
@@ -48,8 +56,6 @@
   margin-bottom: 35px;
 
 }
-
-.footer-menu__item {}
 
 .footer-menu__link {
   font-size: 14px;

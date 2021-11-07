@@ -5,14 +5,16 @@
   width: 100%;
   margin: 0 auto;
 
-  @media (max-width: 1024px) {
+  @media (max-width: 128px) {
+    padding-left: 33px;
+    padding-right: 33px;
   }
-  @media (max-width: 768px) {
-  }
-  @media (max-width: 375px) {
-  }
-  @media (max-width: 320px) {
-  }
+
+  @media (max-width: 768px) {}
+
+  @media (max-width: 375px) {}
+
+  @media (max-width: 320px) {}
 
   /* @media (max-width: 1400px) {
     max-width: 1190px;

@@ -26,6 +26,11 @@
   text-decoration: none;
   display: block;
   grid-row: span 2 / auto;
+
+  @media (max-width: 1500px) {
+    padding-right: 0;
+    max-width: 209px;
+  }
 }
 
 .header__top {
@@ -39,6 +44,10 @@
   height: max-content;
   position: relative;
   z-index: 2;
+
+  @media (max-width: 1500px) {
+    padding-left: 0;
+  }
 
   &::after {
     content: "";
@@ -84,9 +93,23 @@
     justify-content: flex-start;
   }
 
+  @media (max-width: 1500px) {
+    gap: 0px;
+    justify-content: space-between;
+    max-width: 343px;
+    width: 100%;
+  }
+
   .button--transparent {
     max-width: 162px;
     width: 100%;
+  }
+}
+
+.header__telephone {
+  @media (max-width: 1500px) {
+    text-align: left;
+    width: initial;
   }
 }
 
@@ -94,6 +117,12 @@
   max-width: 177px;
   display: flex;
   align-items: center;
+}
+
+.header__bottom {
+  @media (max-width: 1500px) {
+    padding: 0;
+  }
 }
 
 // прилипающее меню
@@ -124,4 +153,5 @@
     border: none;
   }
 }
+
 // прилипающее меню конец

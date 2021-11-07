@@ -19,6 +19,10 @@
   grid-template-columns: 1fr 1fr 1fr 1fr;
   gap: 32px;
   margin: 0 auto;
+
+  @media (max-width: 1380px) {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .ratings-card {
@@ -39,6 +43,13 @@
   max-width: 100%;
   width: 100%;
   margin-bottom: 70px;
+
+  @media (max-width: 1380px) {
+    gap: 8px;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 40px;
+  }
 }
 
 .ratings-card__score {
@@ -47,6 +58,11 @@
   letter-spacing: -0.02em;
   color: #334257;
   display: block;
+
+  @media (max-width: 1380px) {
+    font-size: 32px;
+    line-height: 120%;
+  }
 }
 
 .ratings-card__stars {
