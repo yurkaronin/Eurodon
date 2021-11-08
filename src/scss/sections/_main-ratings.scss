@@ -23,6 +23,16 @@
   @media (max-width: 1380px) {
     grid-template-columns: 1fr 1fr;
   }
+
+  @media (max-width: 920px) {
+    flex-wrap: wrap;
+  }
+}
+
+.main-ratings__item {
+  @media (max-width: 920px) {
+    flex-basis: 328px;
+  }
 }
 
 .ratings-card {

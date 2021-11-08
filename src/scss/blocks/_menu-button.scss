@@ -1,17 +1,22 @@
 .menu-button {
   display: none;
+  cursor: pointer;
 
   @media (max-width: 1515px) {
-      background-color: transparent;
-      position: relative;
-      border: none;
-      padding: 28px 44px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-left: 1px solid #ebedef;
-      border-bottom: 1px solid #ffffff;
-      margin-left: auto;
+    background-color: transparent;
+    position: relative;
+    border: none;
+    padding: 28px 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-left: 1px solid #ebedef;
+    border-bottom: 1px solid #ffffff;
+    margin-left: auto;
+  }
+
+  @media (max-width: 840px) {
+    padding: 30px;
   }
 
   span,
@@ -40,6 +45,17 @@
 }
 
 .menu-button.active {
+  &::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+  }
+
   span {
     height: 0;
   }

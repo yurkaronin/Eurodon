@@ -3,32 +3,32 @@
 // слайдер на главной странице
 const firstSwiper = document.querySelector('.first-slider');
 if (firstSwiper) {
-var swiper1 = new Swiper(".first-slider", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".first-slider__pagination",
-    clickable: true,
-  },
-});
+  var swiper1 = new Swiper(".first-slider", {
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+      el: ".first-slider__pagination",
+      clickable: true,
+    },
+  });
 }
 
 // слайдер по направлениям услуг
 const directionsSwiper = document.querySelector('.directions-slider__swiper');
 if (directionsSwiper) {
-  var swiper2  = new Swiper(".directions-slider__swiper", {
-  slidesPerView: 5,
-  spaceBetween: 32,
-  slidesPerGroup: 1,
-  loopFillGroupWithBlank: true,
+  var swiper2 = new Swiper(".directions-slider__swiper", {
+    slidesPerView: 5,
+    spaceBetween: 32,
+    slidesPerGroup: 1,
+    loopFillGroupWithBlank: true,
 
-  navigation: {
-    nextEl: ".directions-slider-next",
-    prevEl: ".directions-slider-prew"
-  }
-});
+    navigation: {
+      nextEl: ".directions-slider-next",
+      prevEl: ".directions-slider-prew"
+    }
+  });
 }
 
 // Слайдер с отзывами
@@ -38,24 +38,19 @@ if (directionsSwiper) {
 // }
 
 var swiper3 = new Swiper(".main-reviews-swiper", {
-  // cssMode: true,
   slidesPerView: 1,
   spaceBetween: 20,
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev",
   },
-  // mousewheel: true,
-  // keyboard: true,
   slidesPerView: 1,
   spaceBetween: 30,
   freeMode: true,
   pagination: {
     el: ".swiper-pagination",
-    // clickable: true,
   },
 });
-
 
 // Кастомный select для новых страниц
 /* const defaultSelect = () => {
@@ -85,10 +80,19 @@ const menuButton = document.querySelector('.menu-button');
 if (menuButton) {
   const mainMenu = document.querySelector('.main-nav');
   menuButton.addEventListener('click', function (r) {
-    // document.body.classList.toggle('custom-lock');
+    document.body.classList.toggle('custom-lock');
     menuButton.classList.toggle('active');
     mainMenu.classList.toggle('show');
 
   });
 
 }
+
+// кнопка аккордеона в меню
+var subList = document.querySelectorAll(".main-nav__sublist");
+var subMenuButton = document.querySelectorAll('.submenu-button').forEach((item) =>
+  item.addEventListener('click', () => {
+    item.classList.toggle('active');
+    subList.classList.toggle('active');
+  })
+);

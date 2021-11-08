@@ -1,0 +1,25 @@
+.submenu-button {
+  background-color: transparent;
+  padding: 14px;
+  border: none;
+  position: absolute;
+  top: 0;
+  right: 0;
+  cursor: pointer;
+  display: none;
+
+  @media (max-width: 1024px) {
+    display: block;
+  }
+}
+
+.submenu-button__icon {
+  width: 18px;
+  height: 11px;
+  stroke: #303F82;
+  transition: transform 0.3s ease, opacity 0.18s ease;
+}
+
+.submenu-button.active .submenu-button__icon {
+  transform: rotate(180deg);
+}
