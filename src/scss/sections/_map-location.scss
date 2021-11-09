@@ -1,7 +1,21 @@
+.map-location {
+  padding: 50px 0;
+
+  .choices__item:hover {
+    color: #C3167C;
+  }
+
+  .header-with-button {
+    align-items: baseline;
+  }
+
+
+}
+
 .map-location__area {
   width: 100%;
   display: block;
-  z-index: 11;
+  // z-index: 11;
   position: relative;
   margin-bottom: -5px;
 

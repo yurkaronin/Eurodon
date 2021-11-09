@@ -75,7 +75,7 @@ var swiper3 = new Swiper(".main-reviews-swiper", {
 });
 
 // Кастомный select для новых страниц
-/* const defaultSelect = () => {
+const defaultSelect = () => {
   const element = document.querySelector('.custom-select');
   const example = new Choices(element, {
     itemSelectText: '',
@@ -84,7 +84,7 @@ var swiper3 = new Swiper(".main-reviews-swiper", {
   });
 };
 
-defaultSelect(); */
+defaultSelect();
 
 // прилипающее меню в шапке
 window.onscroll = function showHeader() {
