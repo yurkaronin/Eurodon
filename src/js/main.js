@@ -19,17 +19,39 @@ if (firstSwiper) {
 const directionsSwiper = document.querySelector('.directions-slider__swiper');
 if (directionsSwiper) {
   var swiper2 = new Swiper(".directions-slider__swiper", {
-    slidesPerView: 5,
-    spaceBetween: 32,
+    breakpoints: {
+      320: {
+        slidesPerView: 2,
+        spaceBetween: 30,
+      },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 16,
+      },
+      1150: {
+        slidesPerView: 4,
+        spaceBetween: 24,
+      },
+      1400: {
+        slidesPerView: 5,
+        spaceBetween: 32,
+      }
+    },
     slidesPerGroup: 1,
     loopFillGroupWithBlank: true,
-
+    loop: true,
     navigation: {
       nextEl: ".directions-slider-next",
       prevEl: ".directions-slider-prew"
-    }
+    },
+    pagination: {
+      el: ".directions__pagination",
+      clickable: true,
+    },
   });
 }
+
+
 
 // Слайдер с отзывами
 // const reviewsSwiper = document.querySelector('.main-reviews-swiper');

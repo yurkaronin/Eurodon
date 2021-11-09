@@ -1,18 +1,25 @@
 .header {
   background-color: #ffffff;
-  // border-bottom: 1px solid #eef4f7;
   position: relative;
   z-index: 10;
   overflow-x: clip;
   position: sticky;
   top: 0;
   z-index: 99;
+  border-bottom: 1px solid #eef4f7;
+
+  @media (max-width: 10515px) {
+    border-bottom: none;
+  }
 
   .wrapper {
     display: grid;
     grid-template-columns: 224px auto;
     background-color: #ffffff;
-    border-bottom: 1px solid #eef4f7;
+
+    @media (max-width: 10515px) {
+      border-bottom: 1px solid #eef4f7;
+    }
 
     @media (max-width: 1024px) {
       padding: 0;
