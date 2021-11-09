@@ -9,6 +9,11 @@
   align-items: center;
   justify-content: space-between;
   text-decoration: none;
+
+  @media (max-width: 550px) {
+    padding-left: 0;
+    padding-right: 45px;
+  }
 }
 
 .long-card__name {
@@ -28,6 +33,11 @@
   z-index: 5;
   stroke: #303f82;
   stroke-width: 2;
+
+  @media (max-width: 550px) {
+    position: absolute;
+    right: 15px;
+  }
 }
 
 .long-card__image-wrapper {
@@ -44,6 +54,10 @@
   border-radius: 8px;
   overflow: hidden;
   transition: all 0.55s;
+
+  @media (max-width: 550px) {
+    display: none;
+  }
 
   &::before {
     content: "";
@@ -78,9 +92,17 @@
 
   .long-card__name {
     color: #ffffff;
+
+    @media (max-width: 550px) {
+      color: #0098D0;
+    }
   }
 
   .long-card__icon {
     stroke: #ffffff;
+
+    @media (max-width: 550px) {
+      stroke: #0098D0;
+    }
   }
 }

@@ -46,7 +46,7 @@
   color: #0098d0;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 100%;
   background-color: #ffffff;
   border: 1px solid rgba(0, 152, 208, 0.5);
   border-radius: 4px;
@@ -56,6 +56,7 @@
   justify-content: space-between;
   position: relative;
   transition: 0.2s linear;
+  text-transform: uppercase;
 }
 
 .button__icon-plus {
