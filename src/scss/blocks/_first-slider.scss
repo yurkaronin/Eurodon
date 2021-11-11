@@ -176,6 +176,7 @@
     height: initial;
     padding: 25px 50px;
     border: none;
+    border-radius: 0;
 
   }
 
@@ -187,7 +188,7 @@
   .swiper-button-prev {
     padding-right: 51px;
     border: none;
-    border-right: 2px #ebedef solid;
+    border-right: 1px #ebedef solid;
   }
 
 }
