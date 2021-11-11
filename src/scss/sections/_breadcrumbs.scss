@@ -9,6 +9,7 @@
   display: flex;
   flex-wrap: wrap;
   margin-bottom: 22px;
+  gap: 5px 0;
 }
 
 .breadcrumbs__item {
@@ -40,9 +41,8 @@
   &:active,
   &:hover,
   &:focus {
-    color: #0098D0;
+    color: #0098d0;
   }
-
 }
 
 .breadcrumbs__item:last-child .breadcrumbs__link,
@@ -65,7 +65,7 @@
   padding-top: 0;
   font-size: 18px;
   line-height: 24px;
-  color: #788AA6;
+  color: #788aa6;
 }
 
 .breadcrumbs__item:last-child::after {
