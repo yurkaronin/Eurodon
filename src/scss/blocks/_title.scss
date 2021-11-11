@@ -7,6 +7,7 @@
   font-style: normal;
 
   @media (max-width: 550px) {
-    font-size: 24px;
+    font-size: 24px !important;
+    line-height: 120% !important;
   }
 }
