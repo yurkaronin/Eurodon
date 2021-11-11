@@ -30,10 +30,6 @@
   transform: rotate(180deg);
 }
 
-/* .choices__list .choices__list--dropdown.is-active .choices[data-type*="select-one"]::after {
-  -webkit-transform: rotate(225deg);
-  transform: rotate(225deg);
-} */
 
 .text-field__label {
   font-weight: 700;
@@ -42,4 +38,8 @@
   letter-spacing: 0.02em;
   text-transform: uppercase;
   color: #334257;
+}
+
+.choices__inner {
+  min-height: initial;
 }

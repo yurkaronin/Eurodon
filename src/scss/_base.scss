@@ -18,3 +18,15 @@ img {
 .font-fix {
   font-family: "Montserrat", sans-serif;
 }
+
+a {
+  color: #0098D0;
+  text-decoration: none;
+  transition: 0.2s linear;
+
+  &:active,
+  &:hover,
+  &:focus {
+    color: #C3167C;
+  }
+}
