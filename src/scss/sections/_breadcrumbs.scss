@@ -19,12 +19,14 @@
   justify-content: space-between;
 
   &::after {
-    content: url(../img/icons/icon-breadcrumbs-arrow.svg);
+    content: "";
     display: block;
     position: absolute;
+    width: 17px;
+    height: 8px;
     right: 7px;
-    top: -5px;
-  }
+    background-image: url(../img/icons/icon-breadcrumbs-arrow.svg);
+}
 }
 
 .breadcrumbs__link {
