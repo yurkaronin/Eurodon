@@ -1,0 +1,12 @@
+.title-wrapper {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 32px;
+  margin-bottom: 24px;
+
+  .page-title {
+    margin-bottom: 0;
+  }
+}
