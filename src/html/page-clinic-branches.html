@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Филиалы клиники</title>
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="./libs/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="./libs/choices.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+
+</head>
+
+<body class="body">
+  @@include('sections/header.html')
+  <main>
+    <section class="breadcrumbs">
+      <div class="wrapper">
+        <ul class="breadcrumbs__list">
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link" href="page-home.html">Главная</a>
+          </li>
+          <li class="breadcrumbs__item">
+            <a class="breadcrumbs__link">Филиалы клиники</a>
+          </li>
+        </ul>
+        <h1 class="page-title title">Филиалы клиники</h1>
+      </div>
+    </section>
+    <section class="main-filials">
+      <div class="wrapper">
+        <ul class="main-filials__list">
+
+          <li class="filial-card">
+            <h3 class="filial-card__name">ЕвроДон Суворовский</h3>
+            <button class="filial-card__open-button" aria-label="развернуть карточку">Развернуть карточку</button>
+
+            <ul class="filial-card__details-list">
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-geo-marker.svg" alt="иконка геометки" width="32"
+                  height="32">
+                <p class="filial-card__text">Ростов-на-Дону, ул. Петренко, 16</p>
+              </li>
+              <li class="filial-card__details-item">
+                <a class="filial-card__telephone" href="tel:89286221025">8 928 622-10-25</a>
+              </li>
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-clock.svg" alt="иконка часов" width="32" height="32">
+                <p class="filial-card__text">Пн-Пт: 7:00-20:00; Сб: 7:00-18:00 <br>
+                  Вc: 8:00-15:00</p>
+              </li>
+            </ul>
+            <a class="button button--plus" href="#">
+              <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0h2v16H7z"></path>
+                <path d="M16 7v2H0V7z"></path>
+              </svg>
+              Подробнее</a>
+
+          </li> <!-- .filial-card -->
+
+          <li class="filial-card active">
+            <h3 class="filial-card__name">ЕвроДон Сельмаш</h3>
+            <button class="filial-card__open-button" aria-label="развернуть карточку">Развернуть карточку</button>
+
+            <ul class="filial-card__details-list">
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-geo-marker.svg" alt="иконка геометки" width="32"
+                  height="32">
+                <p class="filial-card__text">Ростов-на-Дону, ул. Петренко, 16</p>
+              </li>
+              <li class="filial-card__details-item">
+                <a class="filial-card__telephone" href="tel:89286221025">8 928 622-10-25</a>
+              </li>
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-clock.svg" alt="иконка часов" width="32" height="32">
+                <p class="filial-card__text">Пн-Пт: 7:00-20:00; Сб: 7:00-18:00 <br>
+                  Вc: 8:00-15:00</p>
+              </li>
+            </ul>
+            <a class="button button--plus" href="#">
+              <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0h2v16H7z"></path>
+                <path d="M16 7v2H0V7z"></path>
+              </svg>
+              Подробнее</a>
+          </li> <!-- .filial-card -->
+
+          <li class="filial-card">
+            <h3 class="filial-card__name">ЕвроДон Западный</h3>
+            <button class="filial-card__open-button" aria-label="развернуть карточку">Развернуть карточку</button>
+
+            <ul class="filial-card__details-list">
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-geo-marker.svg" alt="иконка геометки" width="32"
+                  height="32">
+                <p class="filial-card__text">Ростов-на-Дону, ул. Петренко, 16</p>
+              </li>
+              <li class="filial-card__details-item">
+                <a class="filial-card__telephone" href="tel:89286221025">8 928 622-10-25</a>
+              </li>
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-clock.svg" alt="иконка часов" width="32" height="32">
+                <p class="filial-card__text">Пн-Пт: 7:00-20:00; Сб: 7:00-18:00 <br>
+                  Вc: 8:00-15:00</p>
+              </li>
+            </ul>
+            <a class="button button--plus" href="#">
+              <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0h2v16H7z"></path>
+                <path d="M16 7v2H0V7z"></path>
+              </svg>
+              Подробнее</a>
+
+          </li> <!-- .filial-card -->
+
+          <li class="filial-card">
+            <h3 class="filial-card__name">ЕвроДон Вавилова</h3>
+            <ul class="filial-card__details-list">
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-geo-marker.svg" alt="иконка геометки" width="32"
+                  height="32">
+                <p class="filial-card__text">Ростов-на-Дону, ул. Петренко, 16</p>
+              </li>
+              <li class="filial-card__details-item">
+                <a class="filial-card__telephone" href="tel:89286221025">8 928 622-10-25</a>
+              </li>
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-clock.svg" alt="иконка часов" width="32" height="32">
+                <p class="filial-card__text">Пн-Пт: 7:00-20:00; Сб: 7:00-18:00 <br>
+                  Вc: 8:00-15:00</p>
+              </li>
+            </ul>
+            <a class="button button--plus" href="#">
+              <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0h2v16H7z"></path>
+                <path d="M16 7v2H0V7z"></path>
+              </svg>
+              Подробнее</a>
+              <button class="filial-card__open-button" aria-label="развернуть карточку">Развернуть карточку</button>
+          </li> <!-- .filial-card -->
+
+          <li class="filial-card">
+            <h3 class="filial-card__name">ЕвроДон Социалистическая</h3>
+            <ul class="filial-card__details-list">
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-geo-marker.svg" alt="иконка геометки" width="32"
+                  height="32">
+                <p class="filial-card__text">Ростов-на-Дону, ул. Петренко, 16</p>
+              </li>
+              <li class="filial-card__details-item">
+                <a class="filial-card__telephone" href="tel:89286221025">8 928 622-10-25</a>
+              </li>
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-clock.svg" alt="иконка часов" width="32" height="32">
+                <p class="filial-card__text">Пн-Пт: 7:00-20:00; Сб: 7:00-18:00 <br>
+                  Вc: 8:00-15:00</p>
+              </li>
+            </ul>
+            <a class="button button--plus" href="#">
+              <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0h2v16H7z"></path>
+                <path d="M16 7v2H0V7z"></path>
+              </svg>
+              Подробнее</a>
+              <button class="filial-card__open-button" aria-label="развернуть карточку">Развернуть карточку</button>
+          </li> <!-- .filial-card -->
+
+          <li class="filial-card">
+            <h3 class="filial-card__name">ЕвроДон Горького</h3>
+            <ul class="filial-card__details-list">
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-geo-marker.svg" alt="иконка геометки" width="32"
+                  height="32">
+                <p class="filial-card__text">Ростов-на-Дону, ул. Петренко, 16</p>
+              </li>
+              <li class="filial-card__details-item">
+                <a class="filial-card__telephone" href="tel:89286221025">8 928 622-10-25</a>
+              </li>
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-clock.svg" alt="иконка часов" width="32" height="32">
+                <p class="filial-card__text">Пн-Пт: 7:00-20:00; Сб: 7:00-18:00 <br>
+                  Вc: 8:00-15:00</p>
+              </li>
+            </ul>
+            <a class="button button--plus" href="#">
+              <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0h2v16H7z"></path>
+                <path d="M16 7v2H0V7z"></path>
+              </svg>
+              Подробнее</a>
+              <button class="filial-card__open-button" aria-label="развернуть карточку">Развернуть карточку</button>
+          </li> <!-- .filial-card -->
+
+          <li class="filial-card">
+            <h3 class="filial-card__name">ЕвроДон Чалтырь</h3>
+            <ul class="filial-card__details-list">
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-geo-marker.svg" alt="иконка геометки" width="32"
+                  height="32">
+                <p class="filial-card__text">Ростов-на-Дону, ул. Петренко, 16</p>
+              </li>
+              <li class="filial-card__details-item">
+                <a class="filial-card__telephone" href="tel:89286221025">8 928 622-10-25</a>
+              </li>
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-clock.svg" alt="иконка часов" width="32" height="32">
+                <p class="filial-card__text">Пн-Пт: 7:00-20:00; Сб: 7:00-18:00 <br>
+                  Вc: 8:00-15:00</p>
+              </li>
+            </ul>
+            <a class="button button--plus" href="#">
+              <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0h2v16H7z"></path>
+                <path d="M16 7v2H0V7z"></path>
+              </svg>
+              Подробнее</a>
+              <button class="filial-card__open-button" aria-label="развернуть карточку">Развернуть карточку</button>
+          </li> <!-- .filial-card -->
+
+          <li class="filial-card">
+            <h3 class="filial-card__name">ЕвроДон Самарское</h3>
+            <ul class="filial-card__details-list">
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-geo-marker.svg" alt="иконка геометки" width="32"
+                  height="32">
+                <p class="filial-card__text">Ростов-на-Дону, ул. Петренко, 16</p>
+              </li>
+              <li class="filial-card__details-item">
+                <a class="filial-card__telephone" href="tel:89286221025">8 928 622-10-25</a>
+              </li>
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-clock.svg" alt="иконка часов" width="32" height="32">
+                <p class="filial-card__text">Пн-Пт: 7:00-20:00; Сб: 7:00-18:00 <br>
+                  Вc: 8:00-15:00</p>
+              </li>
+            </ul>
+            <a class="button button--plus" href="#">
+              <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0h2v16H7z"></path>
+                <path d="M16 7v2H0V7z"></path>
+              </svg>
+              Подробнее</a>
+          </li> <!-- .filial-card -->
+
+          <li class="filial-card">
+            <h3 class="filial-card__name">ЕвроДон Таганрог</h3>
+            <ul class="filial-card__details-list">
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-geo-marker.svg" alt="иконка геометки" width="32"
+                  height="32">
+                <p class="filial-card__text">Ростов-на-Дону, ул. Петренко, 16</p>
+              </li>
+              <li class="filial-card__details-item">
+                <a class="filial-card__telephone" href="tel:89286221025">8 928 622-10-25</a>
+              </li>
+              <li class="filial-card__details-item">
+                <img class="filial-card__icon" src="img/icons/icon-clock.svg" alt="иконка часов" width="32" height="32">
+                <p class="filial-card__text">Пн-Пт: 7:00-20:00; Сб: 7:00-18:00 <br>
+                  Вc: 8:00-15:00</p>
+              </li>
+            </ul>
+            <a class="button button--plus" href="#">
+              <svg class="button__icon-plus" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M7 0h2v16H7z"></path>
+                <path d="M16 7v2H0V7z"></path>
+              </svg>
+              Подробнее</a>
+          </li> <!-- .filial-card -->
+        </ul>
+      </div>
+    </section>
+
+    <section class="map-location map-location--mod">
+      <div class="wrapper">
+        <div class="map-location__area">
+          <img src="img/map/1.jpg" alt="карта" width="1504" height="360">
+        </div>
+
+      </div>
+    </section>
+
+    <div class="decorate">
+      @@include('sections/main-ratings.html')
+      @@include('sections/main-information.html')
+    </div>
+    @@include('sections/promo-block.html')
+  </main>
+  @@include('sections/footer.html')
+  <script src="./libs/swiper-bundle.min.js"></script>
+  <script src="./libs/choices.min.js"></script>
+  <script src="./js/main.js"></script>
+
+</body>
+
+</html>
