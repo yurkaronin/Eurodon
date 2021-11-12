@@ -54,37 +54,45 @@ if (directionsSwiper) {
 // Слайдер с текстовыми отзывами
 const reviewsSwiper = document.querySelector('.main-reviews-swiper');
 if (reviewsSwiper) {
-var swiper3 = new Swiper(".main-reviews-swiper", {
-  slidesPerView: 1,
-  spaceBetween: 20,
-  loop: true,
-  navigation: {
-    nextEl: ".reviews-button-next",
-    prevEl: ".reviews-button-prev",
-  },
-  slidesPerView: 1,
-  spaceBetween: 30,
-  freeMode: true,
-  pagination: {
-    el: ".reviews-pagination",
-    clickable: true,
-  },
-});
+  var swiper3 = new Swiper(".main-reviews-swiper", {
+    slidesPerView: 1,
+    spaceBetween: 20,
+    loop: true,
+    navigation: {
+      nextEl: ".reviews-button-next",
+      prevEl: ".reviews-button-prev",
+    },
+    slidesPerView: 1,
+    spaceBetween: 30,
+    freeMode: true,
+    pagination: {
+      el: ".reviews-pagination",
+      clickable: true,
+    },
+  });
 }
 
-// Кастомный select для новых страниц
-const element = document.querySelector('.custom-select');
-if (element) {
-const defaultSelect = () => {
-  const example = new Choices(element, {
-    itemSelectText: '',
-    searchEnabled: false,
-    placeholder: true,
-  });
+// Кастомный select
+const elements = document.querySelectorAll('.custom-select');
+
+if (elements) {
+  let nameSelect;
+  for (let i = 0, customName = 1; i < elements.length; i++) {
+    elements[i].setAttribute('data-name', `select${customName}`);
+    nameSelect = elements[i].getAttribute('data-name');
+
+
+    const example = new Choices(`[data-name='${nameSelect}']`, {
+      itemSelectText: '',
+      searchEnabled: false,
+      placeholder: false,
+    });
+
+    customName++;
+  }
 };
 
-  defaultSelect();
-}
+
 
 
 
