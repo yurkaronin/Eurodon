@@ -1,6 +1,6 @@
 'use strict';
 
-// слайдер на главной странице
+// Слайдер в первом экране страниц
 const firstSwiper = document.querySelector('.first-slider');
 if (firstSwiper) {
   var swiper1 = new Swiper(".first-slider", {
@@ -15,7 +15,7 @@ if (firstSwiper) {
   });
 }
 
-// слайдер по направлениям услуг
+// слайдер по направлениям услуг с иконками
 const directionsSwiper = document.querySelector('.directions-slider__swiper');
 if (directionsSwiper) {
   var swiper2 = new Swiper(".directions-slider__swiper", {
@@ -51,32 +51,31 @@ if (directionsSwiper) {
   });
 }
 
-
-
-// Слайдер с отзывами
-// const reviewsSwiper = document.querySelector('.main-reviews-swiper');
-// if (reviewsSwiper) {
-
-// }
-
+// Слайдер с текстовыми отзывами
+const reviewsSwiper = document.querySelector('.main-reviews-swiper');
+if (reviewsSwiper) {
 var swiper3 = new Swiper(".main-reviews-swiper", {
   slidesPerView: 1,
   spaceBetween: 20,
+  loop: true,
   navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
+    nextEl: ".reviews-button-next",
+    prevEl: ".reviews-button-prev",
   },
   slidesPerView: 1,
   spaceBetween: 30,
   freeMode: true,
   pagination: {
-    el: ".swiper-pagination",
+    el: ".reviews-pagination",
+    clickable: true,
   },
 });
+}
 
 // Кастомный select для новых страниц
+const element = document.querySelector('.custom-select');
+if (element) {
 const defaultSelect = () => {
-  const element = document.querySelector('.custom-select');
   const example = new Choices(element, {
     itemSelectText: '',
     searchEnabled: false,
@@ -84,7 +83,10 @@ const defaultSelect = () => {
   });
 };
 
-defaultSelect();
+  defaultSelect();
+}
+
+
 
 // прилипающее меню в шапке
 window.onscroll = function showHeader() {
@@ -105,9 +107,7 @@ if (menuButton) {
     document.body.classList.toggle('custom-lock');
     menuButton.classList.toggle('active');
     mainMenu.classList.toggle('show');
-
   });
-
 }
 
 // кнопка аккордеона в меню

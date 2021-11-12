@@ -93,23 +93,6 @@
   justify-content: space-between;
   position: relative;
   transition: 0.2s linear;
-
-  &::after {
-    content: url(../img/icons/icon-arrow-back.svg);
-    position: absolute;
-    left: 15px;
-    width: 16px;
-    height: 16px;
-    left: 15px;
-    width: 16px;
-    height: 16px;
-  }
-
-  &:active::after,
-  &:hover::after,
-  &:focus::after {
-    content: url(../img/icons/plus-wh.svg);
-  }
 }
 
 .button--search {

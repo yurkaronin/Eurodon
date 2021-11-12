@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 0 0 80px;
 
+  @media (max-width: 920px) {
+    padding-bottom: 40px;
+  }
+
   img {
     display: block;
   }

@@ -94,6 +94,7 @@
   position: relative;
   transition: 0.2s linear;
 
+
   @media (max-width: 1515px) {
     font-family: "Montserrat", sans-serif;
     font-weight: 700;
@@ -122,7 +123,8 @@
 
 .main-nav__link--active,
 .main-nav__link:not([href]) {
-  color: #c3167c;
+  // color: #c3167c;
+  opacity: 0.4;
 }
 
 .main-nav__link::before {
@@ -164,6 +166,10 @@
   line-height: 20px;
   color: #334257;
   transition: 0.2s linear;
+
+  &:not([href]) {
+    opacity: 0.4;
+  }
 
   @media (max-width: 1515px) {
     font-size: 14px;

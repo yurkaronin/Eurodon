@@ -1,0 +1,17 @@
+.content-navigation {
+  .button__arrow-icon {
+    width: 16px;
+    height: 16px;
+    stroke: #0098d0;
+    position: absolute;
+    left: 15px;
+  }
+
+  .button--arrow:hover,
+  .button--arrow:active,
+  .button--arrow:focus {
+    .button__arrow-icon {
+      stroke: #ffffff;
+    }
+  }
+}

@@ -1,3 +1,16 @@
+.main-reviews {
+  padding-bottom: 66px;
+
+  .swiper-button-next,
+  .swiper-button-prev {
+    background-color: #fff;
+
+    @media (max-width: 1300px) {
+      display: none;
+    }
+  }
+}
+
 .main-reviews__item {
   max-width: 992px;
   margin: 0 auto;
@@ -27,7 +40,7 @@
 }
 
 .main-reviews__text {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .main-reviews-swiper .swiper-wrapper {
