@@ -1,26 +1,53 @@
 .specialist-search {
+  .choices__inner {
+    background: #ffffff;
+    border: 1px solid #7895a6;
+    box-sizing: border-box;
+    border-radius: 4px;
+    font-family: "Open Sans", sans-serif;
+    padding: 16px 24px;
+  }
+
+  .choices[data-type*="select-one"]::after {
+    width: 16px;
+    height: 10px;
+    top: 50%;
+    background-image: url(../img/icons/arrow-select-down.svg);
+  }
+
+  .choices__item {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 100%;
+    color: #334257;
+    text-transform: none;
+  }
 }
-.wrapper {
+
+.specialist-search__form {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-start;
 }
-.custom-form {
-}
+
 .custom-form__search {
+  flex-grow: 1;
 }
-.input-search {
-}
-.custom-form__label {
-}
-.input-search__wrapper {
-}
-.custom-form__button {
-}
-.button {
-}
-.main-search__icon {
-}
+
 .specialist-search__select-prof {
+  max-width: 352px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
 }
-.custom-select {
-}
+
 .specialist-search__select-location {
+  max-width: 352px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+  justify-content: space-between;
 }
