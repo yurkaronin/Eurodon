@@ -1,0 +1,22 @@
+.input-search {
+  max-width: 705px;
+  display: flex;
+  gap: 10px;
+  flex-direction: column;
+}
+
+.input-search__wrapper {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+.input-search__area {
+  flex-grow: 1;
+  font-family: 'Open Sans, sa';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #7895a6;
+}

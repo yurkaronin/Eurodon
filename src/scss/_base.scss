@@ -20,13 +20,18 @@ img {
 }
 
 a {
-  color: #0098D0;
+  color: #0098d0;
   text-decoration: none;
   transition: 0.2s linear;
 
   &:active,
   &:hover,
   &:focus {
-    color: #C3167C;
+    color: #c3167c;
+  }
+
+  /* Для наглядности */
+  &[href=""] {
+    opacity: 0.4;
   }
 }
