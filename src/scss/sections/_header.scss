@@ -23,14 +23,12 @@
 
     @media (max-width: 1024px) {
       padding: 0;
-
     }
   }
 
   .main-nav {
     margin-right: auto;
   }
-
 }
 
 .header__logo {
@@ -84,9 +82,9 @@
   @media (max-width: 1024px) {
     grid-column: span 2 / auto;
     order: -1;
-    background-color: #EEF4F6;
-    padding-left: 40px;
-    padding-right: 40px;
+    background-color: #eef4f6;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   @media (max-width: 840px) {
@@ -202,7 +200,37 @@
   }
 }
 
+.header__search {
+  padding: 16px 0 !important;
+  grid-column: 1/-1;
+  display: flex;
+  align-items: center;
+  gap: 23px;
+  margin-bottom: 0;
 
+  @media (max-width: 1024px) {
+    flex-direction: column;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .main-search__title {
+    max-width: 265px;
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+      display: none;
+    }
+  }
+  .main-search__form {
+    flex-grow: 1;
+    width: 100%;
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
+  }
+}
 
 // прилипающее меню
 .sticky {
@@ -237,5 +265,12 @@
     border: none;
   }
 }
-
 // прилипающее меню конец
+
+.header__search {
+  display: none;
+}
+
+.header__search.active {
+  display: flex;
+}

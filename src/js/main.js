@@ -118,6 +118,17 @@ if (menuButton) {
   });
 }
 
+// кнопка поиска в шапке
+const searchButton = document.querySelector('.search-button');
+if (searchButton) {
+  const searchToggle = document.querySelector('.search-toggle');
+  const headerSearch = document.querySelector('.header__search');
+  searchButton.addEventListener('click', function (r) {
+    searchToggle.classList.toggle('active');
+    headerSearch.classList.toggle('active');
+  });
+}
+
 // кнопка аккордеона в меню
 var subList = document.querySelectorAll(".main-nav__sublist");
 var subMenuButton = document.querySelectorAll('.submenu-button').forEach((item) =>

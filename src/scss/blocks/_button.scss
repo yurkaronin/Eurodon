@@ -124,9 +124,7 @@
   }
 }
 
-.button--search:active,
-.button--search:hover,
-.button--search:focus {
+.button--search:hover {
   background-color: #303f82;
 
   @media (max-width: 1515px) {
